@@ -1,0 +1,129 @@
+---
+permalink: task-manage-storage-systems.html 
+sidebar: sidebar 
+keywords: smi-s provider, commands, add, delete, list, storage, systems, cimom repository 
+summary: Los comandos SMI-S Provider de NetApp se pueden utilizar para añadir, eliminar y enumerar sistemas de almacenamiento en el repositorio CIMOM. También puede enumerar las exportaciones NFS y CIFS y las LUN exportadas para los sistemas de almacenamiento. 
+---
+= Gestionar los sistemas de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Los comandos SMI-S Provider de NetApp se pueden utilizar para añadir, eliminar y enumerar sistemas de almacenamiento en el repositorio CIMOM. También puede enumerar las exportaciones NFS y CIFS y las LUN exportadas para los sistemas de almacenamiento.
+
+.Antes de empezar
+* Ya debe tener credenciales de inicio de sesión como Administrador.
+* Debe haber iniciado sesión en el sistema host como administrador.
+
+
+.Acerca de esta tarea
+Para ONTAP, debe especificar una dirección IP de gestión para una SVM, no una dirección IP de clúster, y debe proporcionar las credenciales para un usuario de vsadmin. El proveedor SMI-S no admite direcciones IP de clúster ni direcciones IP de gestión de nodos, ni tampoco admite SVM de administrador de nodos ni de nodos.
+
+[NOTE]
+====
+Debe establecer el valor del protocolo de datos en `none` Para la LIF de gestión cuando se la añade al proveedor de SMI-S.
+
+====
+.Pasos
+. Acceda al proveedor SMI-S de NetApp.
+. Complete una de las siguientes acciones:
++
+[cols="3*"]
+|===
+| Acción | Comando | Información adicional 
+
+
+ a| 
+Añada un sistema de almacenamiento con una conexión HTTP entre el proveedor y el sistema de almacenamiento
+ a| 
+`*smis add _storage_sys storage_sys_user_*`
+ a| 
+El comando espera hasta 15 minutos para que el proveedor actualice la caché y responda.
+
+
+
+ a| 
+Añada un sistema de almacenamiento con una conexión HTTPS entre el proveedor y el sistema de almacenamiento
+ a| 
+`*smis addsecure _storage_sys storage_sys_user_*`
+ a| 
+El comando espera hasta 15 minutos para que el proveedor actualice la caché y responda.
+
+
+
+ a| 
+Enumere las exportaciones de NFS y CIFS para un sistema de almacenamiento
+ a| 
+`*smis exports*`
+ a| 
+Ninguno
+
+
+
+ a| 
+Enumere los sistemas de almacenamiento para el repositorio de CIMOM
+ a| 
+`*smis list*`
+ a| 
+Este comando se puede ejecutar para verificar los sistemas de almacenamiento en el repositorio de CIMOM antes de agregar o eliminar sistemas de almacenamiento.
+
+
+
+ a| 
+Enumere las LUN exportadas para un sistema de almacenamiento
+ a| 
+`*smis luns*`
+ a| 
+Ninguno
+
+
+
+ a| 
+Elimine un sistema de almacenamiento del repositorio de CIMOM
+ a| 
+`*smis delete _storage_sys_*`
+ a| 
+Si ya no necesita administrar un sistema de almacenamiento, puede eliminarlo del repositorio de CIMOM.
+
+Dado que SMI-S Provider recopila información de todos los sistemas de almacenamiento del repositorio CIMOM, debe eliminar un sistema de almacenamiento sin usar del repositorio para mantener un rendimiento óptimo.
+
+
+
+ a| 
+Muestra la información actual de configuración del servidor CIM
+ a| 
+`*smis config show*`
+ a| 
+Ninguno
+
+
+
+ a| 
+Enumere la información de los puertos FC e iSCSI para el sistema de almacenamiento
+ a| 
+`*smis initiators*`
+ a| 
+Ninguno
+
+
+
+ a| 
+Enumere los pools de almacenamiento para el sistema de almacenamiento
+ a| 
+`*smis pools*`
+ a| 
+Ninguno
+
+
+
+ a| 
+Enumere los volúmenes tradicionales y flexibles para los sistemas de almacenamiento
+ a| 
+`*smis volumes*`
+ a| 
+Ninguno
+
+|===
+

@@ -1,0 +1,38 @@
+---
+permalink: task-install-smi-s-agent-on-a-windows-host.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, software, storage systems, data ontap 
+summary: 'Puede instalar el software SMI-S Provider de NetApp para que pueda gestionar los sistemas de almacenamiento que ejecutan Data ONTAP. De forma predeterminada, el software SMI-S Provider de NetApp se instala en el directorio C:\Archivos de programa (x86)\NetApp\smis\pegasus.' 
+---
+= Instale el proveedor SMI-S de NetApp en un host Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede instalar el software SMI-S Provider de NetApp para que pueda gestionar los sistemas de almacenamiento que ejecutan Data ONTAP. Sin embargo, no es posible revertir o degradar a una versión anterior. De manera predeterminada, el software SMI-S Provider de NetApp se instala en la `C:\Program Files (x86)\NetApp\smis\pegasus` directorio.
+
+.Antes de empezar
+Debe tener ya las siguientes credenciales y software:
+
+* Credenciales de inicio de sesión para la cuenta de administrador de Windows
+* Paquete de software SMI-S Provider de NetApp
+
+
+.Acerca de esta tarea
+Como resultado del proceso de instalación, el servicio CIMOM (denominado «'Proveedor SMI-S de NetApp' en Service Control Manager) y el daemon SLP (denominado «Protocolo de ubicación de servicio» en Service Control Manager) se ejecutan como servicios automáticos que se iniciarán automáticamente incluso después de un reinicio del host.
+
+Este procedimiento de instalación refleja una instalación nueva.
+
+.Pasos
+. Inicie sesión como administrador.
+. Desplácese hasta el directorio que contiene el paquete de software SMI-S Provider de NetApp (`smisprovider-_version_number_.msi`) y, a continuación, haga doble clic en el nombre del paquete.
+. Complete los pasos del asistente de configuración.
+
+
+
+
+== Resultado
+
+El proveedor SMI-S de NetApp se inicia automáticamente hacia el final del proceso de instalación.

@@ -1,0 +1,92 @@
+---
+permalink: reference-trace-setting-values.html 
+sidebar: sidebar 
+keywords: specify, comments, trace, target, change, location 
+summary: Puede especificar los componentes que se van a rastrear, el destino de seguimiento y el nivel de seguimiento. De manera opcional, puede cambiar el nombre y la ubicación del archivo de seguimiento si no desea utilizar el nombre y la ubicación predeterminados del archivo de seguimiento. 
+---
+= Valores de configuración de seguimiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede especificar los componentes que se van a rastrear, el destino de seguimiento y el nivel de seguimiento. De manera opcional, puede cambiar el nombre y la ubicación del archivo de seguimiento si no desea utilizar el nombre y la ubicación predeterminados del archivo de seguimiento.
+
+Puede configurar los siguientes ajustes de seguimiento:
+
+* *TraceComponents*
++
+Especifica los componentes que se van a rastrear. De forma predeterminada, se rastrean todos los componentes.
+
+* *TraceFacility*
++
+Especifica el destino al que se escriben los mensajes de seguimiento:
+
++
+** Archivo
++
+Éste es el valor predeterminado, que especifica que los mensajes de seguimiento se escriben en el archivo especificado por la opción de configuración traceFilePath.
+
+** Registro
++
+Especifica que los mensajes de seguimiento se escriben en el archivo de registro cimserver_Standard.
+
+
+
+* *TraceFilePath*
++
+Especifica la ubicación del archivo de seguimiento. De forma predeterminada, la traza es el archivo `cimserver.trc` y se encuentra en el `traces` directorio.
+
+* *Nivel de rastreo*
++
+Especifica el nivel de seguimiento. De forma predeterminada, el seguimiento está desactivado.
+
++
+[cols="2*"]
+|===
+| Nivel de traza | Mensajes de seguimiento escritos 
+
+
+ a| 
+0
+ a| 
+El seguimiento está desactivado.
+
+
+
+ a| 
+1
+ a| 
+Mensajes graves y de registro.
+
+
+
+ a| 
+2
+ a| 
+Mensajes básicos de seguimiento de flujo (detalle de datos bajo)
+
+
+
+ a| 
+3
+ a| 
+Flujo lógico inter-function (detalle de datos del medio)
+
+
+
+ a| 
+4
+ a| 
+Alto detalle de datos
+
+
+
+ a| 
+5
+ a| 
+Alto detalle de datos + entrada y salida de método
+
+|===
+

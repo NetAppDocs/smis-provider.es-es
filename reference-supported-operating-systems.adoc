@@ -1,0 +1,55 @@
+---
+permalink: reference-supported-operating-systems.html 
+sidebar: sidebar 
+keywords: installing, smi-s provider, verify, windows, host, operating systems 
+summary: Antes de instalar SMI-S Provider, debe verificar que el host Windows esté ejecutando un sistema operativo compatible. 
+---
+= Versiones de sistemas operativos compatibles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Antes de instalar SMI-S Provider, debe verificar que el host Windows esté ejecutando un sistema operativo compatible.
+
+[cols="3*"]
+|===
+| De NetApp | Versiones compatibles | Software cliente necesario 
+
+
+ a| 
+Windows
+ a| 
+* Microsoft Windows Server 2016
+* Microsoft Windows Server 2019
+
+ a| 
+Las bibliotecas de tiempo de ejecución de Microsoft Visual C{pp} 2010 se instalan automáticamente durante la instalación del proveedor SMI-S. Para evitar posibles problemas relacionados con las bibliotecas de tiempo de ejecución, debe instalar Microsoft Visual C{pp} 2010 Redistributable Package (x86). desde la siguiente ubicación: http://www.microsoft.com[]
+
+|===
+
+
+== Requisito de SCVMM 2016 UR 2.1
+
+Se requiere el paquete acumulativo de actualizaciones de System Center Virtual Machine Manager (SCVMM) 2016 para 2.1 gestionar el servidor de archivos de NetApp con SMI-S Provider 5.2.4 y versiones posteriores de NetApp.
+
+Sin este UR, SCVMM 2016 muestra el valor de `Total Capacity` y.. `Available Capacity` opciones como `*0 GB*` Para los archivos compartidos existentes en el servidor de archivos de NetApp.
+
+Para ejecutar SMI-S Provider, la máquina host del proveedor debe cumplir las siguientes especificaciones:
+
+* La máquina host del proveedor no se puede usar para alojar un nodo de Hyper-V.
+* SCVMM no debe estar ejecutándose en el equipo host del proveedor.
+* El equipo host del proveedor no debe ejecutar otros programas que requieran mucha memoria.
+* El equipo host del proveedor no debe ejecutar proveedores de SMI-S desde ningún otro proveedor.
+
+
+Se admiten los siguientes hipervisores:
+
+* Microsoft Windows Server 2016 Hyper-V.
+* ESX de VMware 5.0
+* ESX de VMware 5.1
+* ESX de VMware 5.5
+* ESX de VMware 6.0
+

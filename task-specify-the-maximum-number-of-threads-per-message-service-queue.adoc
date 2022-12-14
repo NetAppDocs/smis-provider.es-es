@@ -1,0 +1,36 @@
+---
+permalink: task-specify-the-maximum-number-of-threads-per-message-service-queue.html 
+sidebar: sidebar 
+keywords: default, smi-s provider, 80 threads, per message, service queue, machine performance 
+summary: De forma predeterminada, SMI-S Provider permite 80 subprocesos por cola de servicio de mensajes. Puede especificar el valor máximo de rosca de 1 a 5000. Aumentar el número máximo de subprocesos puede afectar el rendimiento de la máquina con SMI-S Provider, por lo que debe considerar cuidadosamente si necesita aumentar este valor. 
+---
+= Especifique el número máximo de subprocesos por cola de servicio de mensajes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+De forma predeterminada, SMI-S Provider permite 80 subprocesos por cola de servicio de mensajes. Puede especificar el valor máximo de rosca de 1 a 5000. El aumento del número máximo de subprocesos puede afectar al rendimiento de la máquina con SMI-S Provider, por lo que debe considerar cuidadosamente si necesita aumentar este valor.
+
+.Antes de empezar
+* Ya debe tener credenciales de inicio de sesión como Administrador.
+* Debe haber iniciado sesión en el sistema host como administrador.
+
+
+.Acerca de esta tarea
+Si el archivo de seguimiento muestra muchas líneas de `insufficient resources` salida, debe aumentar el número de subprocesos en incrementos de 500.
+
+Si establece el número máximo de subprocesos en menos de 20, utilice `*cimcli -n root/ontap niall*` el proveedor deja de responder y devuelve el `Insufficient threadpool` mensaje en el archivo de seguimiento. Si esto ocurre, debe aumentar el número de subprocesos en incrementos de 500 y, a continuación, reiniciar el proveedor.
+
+.Pasos
+. Acceda al proveedor SMI-S de NetApp.
+. Cree una variable de entorno del sistema o del usuario denominada `PEGASUS_MAX_THREADS_PER_SVC_QUEUE` con el nuevo valor de rosca máximo.
++
+Para obtener información acerca de cómo crear variables de entorno, consulte la documentación de Windows.
+
+. Reinicie el servidor CIM:
++
+`*smis cimserver restart*`
+
+

@@ -1,0 +1,45 @@
+---
+permalink: reference-smis-delete.html 
+sidebar: sidebar 
+keywords: smis debate, command, storage system 
+summary: El comando smis DELETE elimina un sistema de almacenamiento. 
+---
+= smis delete
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+La `smis delete` comando elimina un sistema de almacenamiento.
+
+.Sintaxis
+`smis delete`
+
+`_storage_sys_`
+
+`[-t {*http* | *https*}]`
+
+.Ubicación
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Nivel de privilegio
+Administrador (Windows)
+
+.Parámetros
+* `*_storage_sys_*`
++
+Nombre o la dirección IP del sistema de almacenamiento que se añadirá
+
+* `*[-t {http | https}]*`
++
+Protocolo que se utilizará: HTTPS (predeterminado) o HTTP
+
+
+
+.Ejemplo
+Elimine un sistema de almacenamiento con la etiqueta ggt-1:
+
+`*smis delete mgt-1*`
+
+Si no aparece ningún mensaje de error, se eliminó correctamente el sistema de almacenamiento.

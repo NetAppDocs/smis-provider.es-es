@@ -1,0 +1,14 @@
+---
+permalink: concept-smi-s-profiles.html 
+sidebar: sidebar 
+keywords: smi-s provider, profile, subprofile, comply, smis-s v1.7 
+summary: 'SMI-S Provider utiliza perfiles y subperfiles que cumplen con SMI-S v1.7. Para obtener más información sobre SMI-S v1.7, consulte la página de SNIA: Software y estándares tecnológicos.' 
+---
+= Perfiles SMI-S.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider utiliza perfiles y subperfiles que cumplen con SMI-S v1.7. Para obtener más información sobre SMI-S v1.7, consulte la página de SNIA: Software y estándares tecnológicos.

@@ -1,0 +1,46 @@
+---
+permalink: reference-smis-disks.html 
+sidebar: sidebar 
+keywords: thesmis, disk, command, display, information, storage, systems 
+summary: El comando Thesmis discos muestra información de disco para los sistemas de almacenamiento. Los discos smis solo funcionan cuando se utilizan con las controladoras Data ONTAP 7-Mode. 
+---
+= discos smis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+La `smis disks` el comando muestra información del disco para los sistemas de almacenamiento. `smis disks` Solo funciona cuando se utiliza con controladoras Data ONTAP 7-Mode.
+
+.Sintaxis
+discos smis
+
+`[-t {*http* | *https*}]`
+
+.Ubicación
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Nivel de privilegio
+Un usuario con un nombre de usuario y una contraseña válidos
+
+.Parámetros
+* `*[-t {http | https}]*`
++
+Protocolo que se utilizará: HTTPS (predeterminado) o HTTP
+
+
+
+.Ejemplo
+La `smis disks` comando y su salida abreviada:
+
+[listing]
+----
+smis disks
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.3",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.5",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.7",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.6",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.1",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.8",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+----

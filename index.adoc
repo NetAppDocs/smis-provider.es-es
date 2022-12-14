@@ -1,0 +1,15 @@
+---
+permalink: index.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, documentation, installation, command based interface, netapp storage system 
+summary: Describe cómo instalar y gestionar SMI-S Provider de NetApp, una interfaz basada en comandos que detecta y gestiona los sistemas de almacenamiento de NetApp. 
+---
+= Documentación del proveedor SMI-S de NetApp
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+Bienvenido a la Biblioteca de información del proveedor SMI-S de NetApp. Aquí encontrará documentación sobre el software SMI-S Provider de NetApp, incluidos cómo instalar y gestionar SMI-S Provider de NetApp, una interfaz basada en comandos que detecta y gestiona los sistemas de almacenamiento de NetApp.
+
+La documentación para versiones anteriores del proveedor SMI-S de NetApp está disponible en la https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62215["Sitio de soporte de NetApp"^].

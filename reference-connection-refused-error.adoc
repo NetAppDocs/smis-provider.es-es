@@ -1,0 +1,34 @@
+---
+permalink: reference-connection-refused-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemas encontrados con el proveedor SMI-S de NetApp. 
+---
+= Conexión rechazada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Mensaje*
++
+`Connection refused`
+
+* *Causa*
++
+No se ha iniciado el servidor CIM.
+
+* *Acción Correctiva*
++
+Desplácese hasta la `bin` directorio en el directorio en el que instaló NetApp SMI-S Provider, e introduzca el siguiente comando para verificar que se haya iniciado el servidor CIM:
+
++
+`smis cimserver status`
+
++
+Si el servidor CIM no se está ejecutando, introduzca el siguiente comando:
+
++
+`smis cimserver start`
+
+

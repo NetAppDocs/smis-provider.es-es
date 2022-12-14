@@ -1,0 +1,45 @@
+---
+permalink: reference-smis-namespaces.html 
+sidebar: sidebar 
+keywords: smis namespace, command, list, registered, namespace, cimom 
+summary: El comando smis nametes enumera los espacios de nombres registrados para CIMOM. 
+---
+= espacios de nombres smis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+La `smis namespaces` El comando enumera los espacios de nombres registrados para CIMOM.
+
+.Sintaxis
+espacios de nombres smis
+
+`[-t {*http* | *https*}]`
+
+.Ubicación
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+* Windows. `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+
+.Nivel de privilegio
+Un usuario con un nombre de usuario y una contraseña válidos
+
+.Parámetros
+* `*[-t {http | https}]*`
++
+Protocolo que se utilizará: HTTPS (predeterminado) o HTTP
+
+
+
+.Ejemplo
+La `smis namespaces` comando y su salida abreviada:
+
+[listing]
+----
+smis namespaces
+interop
+root/ontap
+----

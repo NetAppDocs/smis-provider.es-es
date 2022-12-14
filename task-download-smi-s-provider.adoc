@@ -1,0 +1,26 @@
+---
+permalink: task-download-smi-s-provider.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, installing, download 
+summary: Antes de instalar SMI-S Provider de NetApp, debe descargar el paquete de software en el sitio de soporte de NetApp. 
+---
+= Descargue el paquete de software SMI-S Provider de NetApp
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Antes de instalar SMI-S Provider de NetApp, debe descargar el paquete de software en el sitio de soporte de NetApp.
+
+.Antes de empezar
+Debe haber creado una cuenta del sitio de soporte de NetApp a partir de https://mysupport.netapp.com/site/global/dashboard["Soporte de NetApp"].
+
+.Pasos
+. Vaya a la página *Descargas* > *Software* en el sitio de soporte de NetApp.
+. Localice SMI-S Provider (anteriormente Data ONTAP SMI-S Agent) y seleccione sistema operativo Windows y, a continuación, haga clic en *Go!*.
+. Seleccione la versión que desea descargar haciendo clic en *Ver y descargar*.
+. En la sección *Descarga de software*, haga clic en *CONTINUAR*.
+. Lea y acepte el contrato de licencia para usuario final.
+. Seleccione el archivo de paquete de software y guárdelo en la ubicación deseada.
+

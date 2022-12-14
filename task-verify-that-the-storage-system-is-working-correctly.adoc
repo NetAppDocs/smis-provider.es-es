@@ -1,0 +1,86 @@
+---
+permalink: task-verify-that-the-storage-system-is-working-correctly.html 
+sidebar: sidebar 
+keywords: smi-s provider, configure, least storage, cimom repository storage, working, correctly 
+summary: Antes de poder configurar SMI-S Provider, debe añadir al menos un sistema de almacenamiento al repositorio CIMOM y, a continuación, verificar que el sistema de almacenamiento funcione correctamente. 
+---
+= Compruebe que el sistema de almacenamiento funciona correctamente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Antes de poder configurar SMI-S Provider, debe añadir al menos un sistema de almacenamiento al repositorio CIMOM y, a continuación, verificar que el sistema de almacenamiento funcione correctamente.
+
+.Antes de empezar
+* Ya debe haber iniciado sesión como administrador.
+* Ya debe haber accedido a SMI-S Provider.
+
+
+.Pasos
+. Agregue al menos un sistema de almacenamiento al repositorio de CIMOM:
++
+[cols="2*"]
+|===
+| Para añadir un sistema de almacenamiento con... | Introduzca este comando... 
+
+
+ a| 
+Conexión HTTP entre el proveedor y el sistema de almacenamiento
+ a| 
+`*smis add _storage_sys storage_sys_user_*`
+
+
+
+ a| 
+Conexión HTTPS entre el proveedor y el sistema de almacenamiento
+ a| 
+`*smis addsecure _storage_sys storage_sys_user_*`
+
+|===
++
+El comando espera hasta 15 minutos para que el proveedor actualice la caché y responda.
+
+. Compruebe el resultado de los siguientes comandos:
++
+[cols="2*"]
+|===
+| Para este comando... | Compruebe que... 
+
+
+ a| 
+`smis list`
+ a| 
+El número de elementos coincide con el número de sistemas de almacenamiento que se gestionan.
+
+
+
+ a| 
+`smis disks`
+ a| 
+El número de discos coincide con el número total de discos en todos los sistemas de almacenamiento.
+
+
+
+ a| 
+`smis luns`
+ a| 
+El número de LUN coincide con el número total de LUN en todos los sistemas de almacenamiento.
+
+
+
+ a| 
+`smis pools`
+ a| 
+El número de ONTAP_ConcretePools coincide con el número total de agregados en todos los sistemas de almacenamiento.
+
+
+
+ a| 
+`smis volumes`
+ a| 
+La cantidad de volúmenes coincide con la cantidad total de volúmenes en todos los sistemas de almacenamiento.
+
+|===
+

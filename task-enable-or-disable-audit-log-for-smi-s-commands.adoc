@@ -1,0 +1,56 @@
+---
+permalink: task-enable-or-disable-audit-log-for-smi-s-commands.html 
+sidebar: sidebar 
+keywords: incoming smi-s command, record, log files, auditor, wbem client 
+summary: Todos los comandos SMI-S entrantes se registran en archivos de registro de auditoría, lo que permite a los auditores realizar un seguimiento de las actividades de las operaciones del cliente WBEM y del uso del proveedor. Puede habilitar o deshabilitar el registro de estos comandos entrantes estableciendo una propiedad de configuración dinámica. 
+---
+= Habilitar o deshabilitar el registro de auditoría para comandos SMI-S.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Todos los comandos SMI-S entrantes se registran en archivos de registro de auditoría, lo que permite a los auditores realizar un seguimiento de las actividades de las operaciones del cliente WBEM y del uso del proveedor. Puede habilitar o deshabilitar el registro de estos comandos entrantes estableciendo una propiedad de configuración dinámica.
+
+.Antes de empezar
+* Ya debe tener credenciales de inicio de sesión como Administrador.
+* Debe haber iniciado sesión en el sistema host como administrador.
+
+
+.Acerca de esta tarea
+Los datos de registro de auditoría pueden proporcionar un registro de acceso, actividad y cambio de configuración para un servidor CIM. El contenido del archivo de auditoría incluye el comando que se emitió, en el que se emitió el comando y la hora en que se emitió el comando.
+
+Propiedad de configuración dinámica `enableAuditLog` habilita o deshabilita el registro de auditoría en tiempo de ejecución. De forma predeterminada, enableAuditLog está configurado en true.
+
+La práctica común es dejar activado el registro de auditoría.
+
+El archivo de registro de auditoría (`cimserver_auditlog`) se almacena en el directorio de registro de pegasus (`C:\Program Files (x86)\Netapp\smis\pegasus\logs`).
+
+El tamaño máximo del archivo del registro de auditoría es de 10 MB. Tras alcanzar el límite máximo, se cambia el nombre del archivo `cimserver_auditlog.0`, y un nuevo `cimserver auditlog` se crea el archivo para recoger la información más reciente del registro de auditoría.
+
+El proveedor de SMI-S de NetApp mantiene los seis archivos de registro de auditoría más recientes: `cimserver_auditlog.0` por `cimserver_auditlog.5`.
+
+.Pasos
+. Acceda al proveedor SMI-S de NetApp.
+. Configure el registro de auditoría de comandos SMI-S en tiempo de ejecución:
++
+[cols="2*"]
+|===
+| Acción | Comando 
+
+
+ a| 
+*Activar registro de auditoría SMI-S.*
+ a| 
+`*cimconfig -s enableAuditLog=true*`
+
+
+
+ a| 
+*Desactivar registro de auditoría SMI-S.*
+ a| 
+`*cimconfig -s enableAuditLog=false*`
+
+|===
+

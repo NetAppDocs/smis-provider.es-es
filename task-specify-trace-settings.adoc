@@ -1,0 +1,61 @@
+---
+permalink: task-specify-trace-settings.html 
+sidebar: sidebar 
+keywords: trace, enable, important, gathering, information, troubleshooting, performance, impact 
+summary: Tener activado el seguimiento es importante para recopilar información para la solución de problemas. Sin embargo, tener activado el rastreo puede afectar el rendimiento, así que considere cuidadosamente lo que debe rastrearse y cuánto tiempo necesita activar el rastreo. 
+---
+= Especificación de la configuración de seguimiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Tener activado el seguimiento es importante para recopilar información para la solución de problemas. Sin embargo, tener activado el rastreo puede afectar el rendimiento, así que considere cuidadosamente lo que debe rastrearse y cuánto tiempo necesita activar el rastreo.
+
+.Antes de empezar
+* Ya debe tener credenciales de inicio de sesión como Administrador.
+* Debe haber iniciado sesión en el sistema host como administrador.
+
+
+.Pasos
+. Acceda al proveedor SMI-S de NetApp.
+. Especifique varios ajustes de seguimiento según corresponda:
++
+[cols="2*"]
+|===
+| Acción | Comando 
+
+
+ a| 
+Especifique los componentes que se van a rastrear
+ a| 
+`*cimconfig -s traceComponents=_components_ -p*`
+
+
+
+ a| 
+Especifique la función de seguimiento
+ a| 
+`*cimconfig -s traceFacility=_facility_ -p*`
+
+
+
+ a| 
+Especifique la ubicación del archivo de seguimiento
+ a| 
+`*cimconfig -s traceFilePath=_path_name_ -p*`
+
+
+
+ a| 
+Especifique el nivel de seguimiento
+ a| 
+`*cimconfig -s traceLevel=_level_ -p*`
+
+|===
+. Reinicie el servidor CIM:
++
+`*smis cimserver restart*`
+
+

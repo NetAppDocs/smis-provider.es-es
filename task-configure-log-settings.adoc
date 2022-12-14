@@ -1,0 +1,53 @@
+---
+permalink: task-configure-log-settings.html 
+sidebar: sidebar 
+keywords: system message, directory, netapp si-s provider, cim server log 
+summary: De forma predeterminada, se registran todos los mensajes del sistema. Además, de forma predeterminada, los registros de mensajes del sistema se encuentran en el directorio de registros del directorio en el que se ha instalado SMI-S Provider de NetApp. Puede cambiar la ubicación y el nivel de los mensajes del sistema que se escriben en el registro del servidor CIM. Por ejemplo, puede elegir que los registros se almacenen en un directorio que especifique y que sólo tenga mensajes fatales del sistema escritos en el registro del servidor CIM. 
+---
+= Configure las opciones del registro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+De forma predeterminada, se registran todos los mensajes del sistema. Además, de forma predeterminada, los registros de mensajes del sistema se encuentran en la `logs` directorio en el directorio en el que se ha instalado SMI-S Provider de NetApp. Puede cambiar la ubicación y el nivel de los mensajes del sistema que se escriben en el registro del servidor CIM. Por ejemplo, puede elegir que los registros se almacenen en un directorio que especifique y que sólo tenga mensajes fatales del sistema escritos en el registro del servidor CIM.
+
+.Antes de empezar
+* Ya debe tener credenciales de inicio de sesión como Administrador.
+* Debe haber iniciado sesión en el sistema host como administrador.
+
+
+.Pasos
+. Acceda al proveedor SMI-S de NetApp.
+. Complete una de las siguientes acciones:
++
+[cols="3*"]
+|===
+| Acción | Comando | Información adicional 
+
+
+ a| 
+Cambie el nivel de registro de mensajes del sistema
+ a| 
+`*cimconfig -s logLevel=_new_log_level_ -p*`
+ a| 
+Si desea cambiar el nivel de registro a "'INFORMATION'", por ejemplo, debe introducir este comando: + `*cimconfig -s logLevel=INFORMATION -p*`
+
+
+
+ a| 
+Cambie el directorio de registro de mensajes del sistema
+ a| 
+`*cimconfig -s logdir=new_log_directory -p*` Si la `_new_log_directory_` contiene espacio, debe escribirse entre comillas (`"_new log directory_"`).
+ a| 
+Si desea cambiar el directorio de registro a «serverlogs», por ejemplo, debe introducir este comando:
+
+`*cimconfig -s logdir=serverlogs -p*`
+
+|===
+. Reinicie el servidor CIM:
++
+`*smis cimserver restart*`
+
+

@@ -1,0 +1,14 @@
+---
+permalink: concept-manage-tracing.html 
+sidebar: sidebar 
+keywords: configure, smi-s provider, trace, files, components, trace, write, trace, file location 
+summary: Puede configurar cómo SMI-S Provider administra los archivos de seguimiento, como especificar los componentes que se van a rastrear, el destino al que se escriben los mensajes de seguimiento, el nivel de seguimiento y la ubicación del archivo de seguimiento. 
+---
+= Administrar el seguimiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede configurar cómo SMI-S Provider administra los archivos de seguimiento, como especificar los componentes que se van a rastrear, el destino al que se escriben los mensajes de seguimiento, el nivel de seguimiento y la ubicación del archivo de seguimiento.

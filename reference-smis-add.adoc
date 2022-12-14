@@ -1,0 +1,93 @@
+---
+permalink: reference-smis-add.html 
+sidebar: sidebar 
+keywords: smis addsecure, smis add, storage system, http connection, configuration 
+summary: El comando smis add añade un sistema de almacenamiento con una conexión HTTP a la configuración para permitir la gestión y supervisión del dispositivo. A menos que sea necesario, debe usar los smis addsecure en lugar de los smis add. 
+---
+= smis add
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+La `smis add` El comando añade un sistema de almacenamiento con una conexión HTTP a la configuración para poder gestionar y supervisar el dispositivo. A menos que sea necesario, usted debe utilizar `smis addsecure` en lugar de `smis add`.
+
+.Sintaxis
+`smis add`
+
+`_storage_sys storage_sys_user_`+
+`[-t {*http* | *https*}]`
+
+[NOTE]
+====
+Sistemas operativos que utilizan idiomas diferentes de los EE. UU El inglés no puede usar el `add` comando.
+
+====
+.Ubicación
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Nivel de privilegio
+Administrador (Windows)
+
+.Parámetros
+* `*_storage_sys_*`
++
+El nombre o la dirección IP del sistema de almacenamiento que se añadirá
+
++
+Si especifica la dirección IP, puede usar IPv4 o IPv6. Por ejemplo, se admiten los destinatarios IPv6 comprimidos y completos `*1001:0002:0000:0000:0000:0000:0003:0004*` o. `*1001:2::3:4*`.
+
+* `*_storage_sys_user_*`
++
+Nombre de usuario del administrador que gestiona el sistema de almacenamiento que va a añadir
+
+* `*_storage_sys_pwd_*`
++
+Optional: Contraseña del administrador que administra el sistema de almacenamiento que desea añadir
+
++
+Como práctica recomendada, no utilice este parámetro por motivos de seguridad. Este parámetro solo se proporciona para automatización y compatibilidad con versiones anteriores.
+
+* `*[-t {http | https}]*`
++
+Protocolo que se utilizará: HTTPS (predeterminado) o HTTP
+
+
+
+
+
+== Protocolo agente-sistema de almacenamiento y agente-cliente
+
+La `smis add` y.. `smis addsecure` los comandos determinan el protocolo que se usa entre el sistema de almacenamiento y el proveedor. La `[-t {*http* | *https*}]` el parámetro determina el protocolo utilizado entre el proveedor y el cliente.
+
+La `smis addsecure` y la `[-t {*https*}]` El parámetro se conecta mediante el cifrado SSL y no se permite el tráfico no cifrado. La `smis add` y la `[-t {*http*}]` El parámetro se conecta sin usar el cifrado SSL y se permite el tráfico no cifrado.
+
+Debe tener en cuenta las necesidades de seguridad de su entorno antes de deshabilitar las conexiones cifradas mediante SSL.
+
+.Ejemplo
+Añada un sistema de almacenamiento mediante IPv4 con la dirección IP 10.32.1.4 over HTTP:
+
+[listing]
+----
+smis add 10.32.1.4 user2
+----
+Aparece un mensaje de confirmación para indicar que el sistema de almacenamiento se ha añadido correctamente. Si se ha producido un error, aparece un mensaje de error.
+
+.Ejemplo
+Añada un sistema de almacenamiento mediante IPv6 over HTTP:
+
+[listing]
+----
+smis add 1001:0002:0000:0000:0000:0000:0003:0004 user2
+smis add 1001:2::3:4 user2
+----
+Aparece un mensaje de confirmación para indicar que el sistema de almacenamiento se ha añadido correctamente. Si se ha producido un error, aparece un mensaje de error.
+
+.Ejemplo
+Agregue un sistema de almacenamiento con la dirección IP 10.32.1.4 a través de HTTP en un sistema que no esté en inglés:
+
+[listing]
+----
+cimcli -n root/ontap ci ontap_filerdata hostname="10.32.1.4" username="vsadmin" password="PasSw0Rd" port=80 comMechanism="HTTP" --timeout 180
+----

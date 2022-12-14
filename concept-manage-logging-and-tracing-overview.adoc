@@ -1,0 +1,14 @@
+---
+permalink: concept-manage-logging-and-tracing-overview.html 
+sidebar: sidebar 
+keywords: configure, smi-s provider, trace files, specify, levels, message logging, component, trace, file location 
+summary: Puede configurar cómo SMI-S Provider administra los archivos de registro y rastreo, como especificar los niveles de los mensajes que se van a registrar y el directorio en el que se guardan los registros. También se especifican los componentes que se van a rastrear, el destino al que se escriben los mensajes de seguimiento, el nivel de seguimiento y la ubicación del archivo de seguimiento. 
+---
+= Descripción general
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede configurar cómo SMI-S Provider administra los archivos de registro y rastreo, como especificar los niveles de los mensajes que se van a registrar y el directorio en el que se guardan los registros. También se especifican los componentes que se van a rastrear, el destino al que se escriben los mensajes de seguimiento, el nivel de seguimiento y la ubicación del archivo de seguimiento.

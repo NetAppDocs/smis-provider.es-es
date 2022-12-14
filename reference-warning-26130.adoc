@@ -1,0 +1,39 @@
+---
+permalink: reference-warning-26130.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemas encontrados con el proveedor SMI-S de NetApp. 
+---
+= Advertencia 26130
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+
+
+== Mensaje
+
+`Warning (26130) Storage pool has been allocated to host group where none of hosts in host group has access to storage array.`
+
+
+
+== Descripción
+
+Este error se produce cuando se asigna capacidad de almacenamiento y se otorga acceso a una cabina a los hosts que están en un grupo de hosts. Con esta advertencia, es imposible poner los equipos virtuales en los sistemas de almacenamiento.
+
+
+
+== Acción correctiva
+
+. En cada equipo host, añada la dirección IP de cada sistema de almacenamiento a la aplicación iSCSI Initiator.
+. Si es necesario, en cada sistema de almacenamiento, para cada máquina host, cree un igroup único vinculado con el nombre de nodo iSCSI correspondiente de la máquina host correspondiente.
+. Para cada equipo host conectado a Data ONTAP, abra la aplicación MPIO y añada el siguiente ID de hardware:
++
+** Para Clustered Data ONTAP, escriba `*NETAPP LUN C-Mode*`.
+
+
+. Reinicie las máquinas host.
+. Retire el proveedor.
+. Vuelva a establecer el pool de almacenamiento.
+

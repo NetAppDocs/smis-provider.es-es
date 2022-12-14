@@ -1,0 +1,81 @@
+---
+permalink: reference-types-of-cim-users-and-associated-operations.html 
+sidebar: sidebar 
+keywords: smi-s provider, various types, control, access 
+summary: Cuando se utiliza SMI-S Provider, existen varios tipos de usuario que se pueden asignar a un usuario para controlar su acceso al servidor CIM. 
+---
+= Tipos de usuarios CIM y operaciones asociadas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cuando se utiliza SMI-S Provider, existen varios tipos de usuario que se pueden asignar a un usuario para controlar su acceso al servidor CIM.
+
+A partir de esta versión, se permite al usuario de dominio modificar la base de datos de usuario de SMI-S Provider y otras opciones de configuración como usuario de dominio del grupo Administradores locales.
+
+En la siguiente tabla se enumeran los usuarios admitidos del servidor CIM y las operaciones que puede realizar cada tipo.
+
+[cols="2*"]
+|===
+| Tipo de usuario | Operaciones 
+
+
+ a| 
+Administrador de dominio del grupo Administradores
+ a| 
+Configuración del proveedor de SMI-S y gestión de usuarios mediante `cimconfig` y.. `cimuser` comandos. Por ejemplo:
+
+* Agregar o quitar un usuario al almacén de confianza de SMI-S Provider o del almacén de confianza.
+* Habilitar, deshabilitar o cambiar el nivel de registro y la configuración de seguimiento.
+* Habilite o deshabilite el motor de autenticación en SMI-S Provider.
+
+
+Gestión del almacenamiento y verificación mediante `smis` y.. `cimcli` comandos. Por ejemplo:
+
+* Añada o quite controladoras de almacenamiento o SVM del repositorio o base de datos o caché de un proveedor de SMI-S.
+* Actualice las controladoras de almacenamiento o SVM en la caché del proveedor de SMI-S.
+* Verifique la controladora de almacenamiento o la gestión de SVM.
+
+
+Operaciones de detección de SCVMM mediante la GUI de SCVMM.
+
+
+
+ a| 
+Usuario de dominio del grupo Administradores locales
+
+
+
+ a| 
+Usuario local del grupo Administradores locales
+
+
+
+ a| 
+Usuario administrador de dominios integrado
+
+
+
+ a| 
+Usuario administrador local integrado
+
+
+
+ a| 
+Usuario de dominio del grupo usuarios
+ a| 
+Operaciones de detección de SCVMM mediante la GUI de SCVMM.
+
+
+
+ a| 
+Usuario local del grupo usuarios
+
+|===
+[NOTE]
+====
+Si dispone de SMI-S Provider en un host de Windows y ha cambiado algún nombre de usuario "'Administrator'", deberá cerrar la sesión del sistema y volver a iniciarla. El servicio de Windows SMI-S hereda la autenticación durante este tiempo; como resultado, no se reconocen los cambios en las credenciales hasta que el administrador cierre la sesión y vuelva a iniciarla.
+
+====

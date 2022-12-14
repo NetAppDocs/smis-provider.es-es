@@ -1,0 +1,34 @@
+---
+permalink: task-specify-the-number-of-trace-files-saved.html 
+sidebar: sidebar 
+keywords: trace, enable, seven trace file, pegasus trace file num, system, space 
+summary: Si el seguimiento está activado, de forma predeterminada se guardan siete archivos de seguimiento. Si necesita guardar más archivos de rastreo, puede aumentar el número máximo de archivos de rastreo guardados estableciendo LA variable de entorno PEGASUS_TRACE_FILE_NUM. Si aumenta el número máximo de archivos de rastreo guardados, debe asegurarse de que el sistema tiene suficiente espacio en su disco duro para acomodar los archivos de rastreo. 
+---
+= Especifique el número de archivos de seguimiento guardados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si el seguimiento está activado, de forma predeterminada se guardan siete archivos de seguimiento. Si necesita guardar más archivos de seguimiento, puede aumentar el número máximo de archivos de seguimiento guardados estableciendo la variable de entorno `PEGASUS_TRACE_FILE_NUM`. Si aumenta el número máximo de archivos de rastreo guardados, debe asegurarse de que el sistema tiene suficiente espacio en su disco duro para acomodar los archivos de rastreo.
+
+.Antes de empezar
+* Ya debe tener credenciales de inicio de sesión como Administrador.
+* Debe haber iniciado sesión en el sistema host como administrador.
+
+
+.Acerca de esta tarea
+Si el seguimiento está activado, la información de rastreo se escribe en `cimserver.trc` archivo. Los archivos de seguimiento se giran. Cuando `cimserver.trc` alcanza el tamaño máximo del archivo de seguimiento, su contenido se mueve al `cimserver.trc._n_` archivo. De forma predeterminada, `n` es un valor del 0 al 5. Si necesita guardar más archivos de seguimiento, aumente el valor de `_n_`.
+
+.Pasos
+. Acceda al proveedor SMI-S de NetApp.
+. Cree una variable de entorno del sistema o del usuario denominada `PEGASUS_TRACE_FILE_NUM` con el nuevo número de archivos de rastreo guardados.
++
+_Documentación de Windows_ contiene más información acerca de la creación de variables de entorno.
+
+. Reinicie el servidor CIM:
++
+`*smis cimserver restart*`
+
+

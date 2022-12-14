@@ -1,0 +1,38 @@
+---
+permalink: reference-logging-levels.html 
+sidebar: sidebar 
+keywords: messages, specify, logged 
+summary: 'Puede especificar los tipos de mensajes que se registran (por ejemplo, sólo desea que se registren mensajes fatales del sistema).' 
+---
+= Niveles de registro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede especificar los tipos de mensajes que se registran (por ejemplo, sólo desea que se registren mensajes fatales del sistema).
+
+Puede configurar el nivel de registro en una de las siguientes opciones:
+
+* *TRAZA*
++
+Guarda los mensajes de seguimiento en el registro cimserver_Standard.
+
+* *INFORMACIÓN*
++
+Registra todos los mensajes del sistema (informativos, de advertencia, graves y mortales).
+
+* *ADVERTENCIA*
++
+Registra los mensajes del sistema de advertencia, graves y mortales.
+
+* *GRAVE*
++
+Registra los mensajes graves y mortales del sistema
+
+* *FATAL*
++
+Registra solo mensajes de sistema fatales.
+
+

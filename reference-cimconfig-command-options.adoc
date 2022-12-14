@@ -1,0 +1,72 @@
+---
+permalink: reference-cimconfig-command-options.html 
+sidebar: sidebar 
+keywords: cimconfig, command, cimom configuration, settings, variable, mis cimserver restart command 
+summary: Puede utilizar el comando cimconfig para administrar los valores de configuración de CIMOM. Después de introducir el comando cimconfig o crear una variable de entorno para el valor de configuración del proveedor SMI-S de NetApp, debe reiniciar el servidor CIM mediante el comando smis cimserver Restart. 
+---
+= cimconfig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede utilizar el `cimconfig` Para configurar los valores de CIMOM, como habilitar y deshabilitar HTTP y HTTPS y cambiar los números de puerto HTTP y HTTPS. Tras introducir la `cimconfig` O crear una variable de entorno para el valor de configuración del proveedor SMI-S de NetApp, debe reiniciar el servidor CIM mediante el `smis cimserver restart` comando.
+
+.Sintaxis
+`cimconfig _options_`
+
+.Ubicación
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Nivel de privilegio
+Administrador (Windows)
+
+.Opciones
+* *-c*
++
+Especifica que la configuración se aplica a la configuración de CIMOM actual.
+
+* *-d*
++
+Especifica que la configuración se aplica a la configuración de CIMOM predeterminada.
+
+* *-g*
++
+Obtiene el valor de una propiedad de configuración especificada.
+
+* *-h, --help*
++
+Muestra la ayuda de `cimconfig` comando.
+
+* *-l*
++
+Enumera todas las propiedades de configuración de CIMOM.
+
+* *-p*
++
+Especifica que la configuración se aplica cuando se inicia el servidor CIM a continuación.
+
+* *-s*
++
+Establece el valor de propiedad de configuración especificado.
+
+* *-u*
++
+Restablece la propiedad Configuration a su valor predeterminado.
+
+* *--versión*
++
+Muestra la versión del servidor CIM.
+
+
+
+.Ejemplo
+Cambie el tamaño máximo del archivo de registro a 15000 KB:
+
+[listing]
+----
+cimconfig -s maxLogFileSizeKBytes=15000
+Current value for the property maxLogFileSizeKBytes is set to "15000" in CIMServer.
+smis cimserver restart
+----

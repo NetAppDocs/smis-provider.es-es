@@ -1,0 +1,28 @@
+---
+permalink: reference-smb-share-size-dropping-to-0-in-scvmm.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemas encontrados con el proveedor SMI-S de NetApp. 
+---
+= El tamaño de los recursos compartidos de SMB desciende a 0 en SCVMM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Edición*
++
+El tamaño de recurso compartido de SMB 3.0 nuevo o existente puede caer a 0 en System Center Virtual Machine Manager (SCVMM).
+
+* *Causa*
++
+Este problema ocurre cuando la reinicialización de cuotas tarda mucho en Data ONTAP debido a un gran volumen de I/o, el tamaño de recurso compartido de SMB 3.0 nuevo o existente puede caer a 0 en SCVMM. Por este motivo, no es posible aprovisionar nuevas máquinas virtuales en los recursos compartidos SMB 3.0 nuevos o existentes.
+
+* *Acción Correctiva*
++
+.. Desactivar las cuotas.
+.. Agregue una regla de cuota predeterminada del tipo «'tree'» en cada volumen que aloje recursos compartidos de SMB.
+.. Active las cuotas de esos volúmenes a los que se agregó una regla de cuota predeterminada y reinicie SMI-S Provider.
+
+
+

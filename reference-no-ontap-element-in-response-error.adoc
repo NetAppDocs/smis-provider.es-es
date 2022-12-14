@@ -1,0 +1,25 @@
+---
+permalink: reference-no-ontap-element-in-response-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemas encontrados con el proveedor SMI-S de NetApp. 
+---
+= Retorno de archivador: No hay elemento ONTAP como respuesta
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Mensaje*
++
+`Filer return: No ontap element in response`.
+
+* *Descripción*
++
+Este mensaje se produce cuando se agota el tiempo de espera de la API ONTAPI. El tiempo de espera predeterminado de la API ONTAAPI es de 60 segundos, lo cual puede ser demasiado corto en algunos casos.
+
+* *Acción Correctiva*
++
+Cambie el tiempo de espera de la API ONTAAPI a un valor superior a 60 segundos configurando la variable de entorno `ONTAPI_TIMEOUT_SEC`Y a continuación, reinicie SMI-S Provider.
+
+

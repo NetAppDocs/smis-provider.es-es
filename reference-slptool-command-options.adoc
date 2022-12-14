@@ -1,0 +1,46 @@
+---
+permalink: reference-slptool-command-options.html 
+sidebar: sidebar 
+keywords: slptool, command 
+summary: Puede utilizar estas opciones con el comando slptool. 
+---
+= herramienta de inclinación
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede utilizar el `slptool` Comando para mostrar información acerca de los servicios WBEM.
+
+.Sintaxis
+`slptool [options] _subcommand_`
+
+.Ubicación
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Nivel de privilegio
+Administrador (Windows)
+
+.Opciones
+* *-i*
++
+Especifica una o varias interfaces.
+
+* *-l*
++
+Especifica una etiqueta de idioma.
+
+* *-s*
++
+Especifica una lista de ámbitos (separados por comas).
+
+* *-u*
++
+Especifica una interfaz.
+
+* *-v*
++
+Muestra la versión de `slptool` Y OpenSLP.
+
+

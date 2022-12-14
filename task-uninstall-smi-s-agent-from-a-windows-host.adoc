@@ -1,0 +1,24 @@
+---
+permalink: task-uninstall-smi-s-agent-from-a-windows-host.html 
+sidebar: sidebar 
+keywords: uninstall, smi-s provider, version, exiting, installation, uninstall, latest version 
+summary: Puede desinstalar SMI-S Provider según sea necesario. Por ejemplo, según la versión de la instalación existente, es posible que deba desinstalar la instalación existente de SMI-S Provider antes de instalar la versión más reciente. 
+---
+= Desinstale el proveedor SMI-S de NetApp desde un host de Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede desinstalar SMI-S Provider según sea necesario. Por ejemplo, según la versión de la instalación existente, es posible que deba desinstalar la instalación existente de SMI-S Provider antes de instalar la versión más reciente.
+
+.Acerca de esta tarea
+Si planea desinstalar SMI-S Provider y desea una reinstalación limpia, debe eliminar manualmente todo el contenido del servidor CIM.
+
+Si no desea una reinstalación limpia, SMI-S Provider conserva los archivos de configuración, usuario y otros archivos de base de datos después de la desinstalación.
+
+.Pasos
+. Inicie sesión como administrador.
+. Desinstale el proveedor SMI-S de NetApp desde un host de Windows mediante la utilidad Add/Remove Programs.
+
