@@ -19,6 +19,33 @@ De forma predeterminada, la autenticación SSL está habilitada para el servidor
 
 
 .Pasos
+. Descargue el `openssl.cnf` archivo desde la siguiente ubicación: link:http://web.mit.edu/crypto/openssl.cnf["http://web.mit.edu/crypto/openssl.cnf"^]
+. Mueva el `openssl.cnf` archivo en el directorio bin:
++
+`*%PEGASUS_HOME%\bin\openssl.cnf*`
+
+. Ajuste la `OPENSSL_CONF` variable ambiental a la ubicación del `openssl.cnf` archivo:
++
+`*C:\ >set OPENSSL_CONF=%PEGASUS_HOME%\bin\openssl.cnf*`
+
++
+Esto sólo define la variable de entorno durante la sesión actual del símbolo del sistema. Si desea definir permanentemente la variable de entorno, puede utilizar una de las siguientes opciones:
+
++
+** Vaya a *Propiedades > Variables ambientales* y actualice la variable en *Sistema*.
+** Utilice el símbolo del sistema para definir permanentemente la variable:
++
+`*setx OPENSSL_CONF “%PEGASUS_HOME%\bin\openssl.cnf*`.
+
++
+La variable se define al abrir una nueva sesión de símbolo del sistema.
+
+
+
+. Desplácese hasta la `%PEGASUS_HOME%\bin` directorio:
++
+`*C:\cd %pegasus_home%\bin*`
+
 . Generar una clave privada:
 +
 `*openssl genrsa -out cimom.key 2048*`
