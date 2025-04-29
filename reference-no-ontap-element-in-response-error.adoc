@@ -16,10 +16,10 @@ summary: Problemas encontrados con el proveedor SMI-S de NetApp.
 
 * *Descripción*
 +
-Este mensaje se produce cuando se agota el tiempo de espera de la API ONTAPI. El tiempo de espera predeterminado de la API ONTAAPI es de 60 segundos, lo cual puede ser demasiado corto en algunos casos.
+Este mensaje se produce cuando se agota el tiempo de espera de la llamada a la API de ONTAP. El tiempo de espera predeterminado de la llamada a la API de ONTAP es de 60 segundos, lo que podría ser demasiado corto en algunos casos.
 
 * *Acción Correctiva*
 +
-Cambie el tiempo de espera de la API ONTAAPI a un valor superior a 60 segundos configurando la variable de entorno `ONTAPI_TIMEOUT_SEC`Y a continuación, reinicie SMI-S Provider.
+Cambie el tiempo de espera de la llamada API de ONTAP a un valor superior a 60 segundos. Para ello, configure la variable de entorno `ONTAPI_TIMEOUT_SEC` y, a continuación, reinicie SMI-S. Provider.
 
 

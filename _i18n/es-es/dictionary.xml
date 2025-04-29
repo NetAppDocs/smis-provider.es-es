@@ -13,11 +13,7 @@
   <block id="303b50921b53d3609d0e06a97d955426" category="list-text">Reinicie el servidor CIM:</block>
   <block id="127244f141478553012a969bb50d8169" category="paragraph"><block ref="47ebda37dde3de0ad5bf2c9c816287c8" prefix="" category="inline-code"></block></block>
   <block id="928c1baab03e0230f3715e3de77b083f" category="summary">Novedades en esta versión</block>
-  <block id="bd94701c8c3439968ac328f6961957c3" category="list-text">No hay ninguna ruta de actualización disponible para SMI-S Provider 5.2.5.</block>
-  <block id="c55ff83f0b706c2e4f6784a3eea0d431" category="list-text">Debe poner en marcha SMI-S Provider 5.2.5 como una nueva instalación.</block>
-  <block id="4dcc4ed93f208d25fc9635019b96fb17" category="paragraph">*Para usuarios de Windows:*</block>
   <block id="3073a5fe9dd6b21d2236fe4d631b4b80" category="list-text">Esta versión no es compatible con Windows Server 2012 ni System Center Virtual Machine Manager (SCVMM) 2012.</block>
-  <block id="0ccb5ab6332965b00555d89124eca6f4" category="list-text">SMI-S Provider 5.2.5 es compatible con Windows Server 2016, Windows Server 2019, SCVMM 2016 y SCVMM 2019.</block>
   <block id="1c8b1ceffcc2e5c41818948735527a7f" category="summary">Puede utilizar el comando cimconfig para administrar los valores de configuración de CIMOM. Después de introducir el comando cimconfig o crear una variable de entorno para el valor de configuración del proveedor SMI-S de NetApp, debe reiniciar el servidor CIM mediante el comando smis cimserver Restart.</block>
   <block id="95cdbdc16fcdaafb435475409dea8c94" category="doc">cimconfig</block>
   <block id="7944dd24fa0a41aefb89e769af345698" category="paragraph">Puede utilizar el<block ref="95cdbdc16fcdaafb435475409dea8c94" prefix=" " category="inline-code"></block> Para configurar los valores de CIMOM, como habilitar y deshabilitar HTTP y HTTPS y cambiar los números de puerto HTTP y HTTPS. Tras introducir la<block ref="95cdbdc16fcdaafb435475409dea8c94" prefix=" " category="inline-code"></block> O crear una variable de entorno para el valor de configuración del proveedor SMI-S de NetApp, debe reiniciar el servidor CIM mediante el<block ref="1f675258b010b1fb1452f155258011f1" prefix=" " category="inline-code"></block> comando.</block>
@@ -112,8 +108,6 @@
   <block id="57b854162d6caadf0053934ab77436cd" category="section-title">Acción correctiva</block>
   <block id="4937a7033ec39bd8589c2df73c921a89" category="list-text">En cada equipo host, añada la dirección IP de cada sistema de almacenamiento a la aplicación iSCSI Initiator.</block>
   <block id="7d36242dbaa9912fc085b5ff7c002458" category="list-text">Si es necesario, en cada sistema de almacenamiento, para cada máquina host, cree un igroup único vinculado con el nombre de nodo iSCSI correspondiente de la máquina host correspondiente.</block>
-  <block id="f4a55e7cbbe39eb8f955afd704ea726a" category="list-text">Para cada equipo host conectado a Data ONTAP, abra la aplicación MPIO y añada el siguiente ID de hardware:</block>
-  <block id="25c100de8cdfff7216dbf6a699030071" category="list-text">Para Clustered Data ONTAP, escriba<block ref="ade191b1004522550d83e818f2d7139d" prefix=" " category="inline-code"></block>.</block>
   <block id="ffd73db9cb7d1dec7d0b41031a0865f5" category="list-text">Reinicie las máquinas host.</block>
   <block id="96ee3206e5a288b7c11d4de582d14ec9" category="list-text">Retire el proveedor.</block>
   <block id="0bc3df559d8caef1f69d55ee3c5b77e1" category="list-text">Vuelva a establecer el pool de almacenamiento.</block>
@@ -172,9 +166,6 @@
   <block id="80feca2aef5bfe7af61ecef2104515dc" category="summary">Conocer el número máximo de sistemas gestionados por SMI-S Provider de NetApp le ayuda a comprender sus funcionalidades de rendimiento.</block>
   <block id="8df995b0877455c8e157e1650dc377d4" category="doc">Ajuste de tamaño y rendimiento del proveedor SMI-S de NetApp</block>
   <block id="98bc8ee199ee6b2e16fe0a72065bc977" category="paragraph">*Tamaño*</block>
-  <block id="7b5949a309ff956607ccd7a05549a643" category="paragraph">El proveedor SMI-S de NetApp puede gestionar hasta el siguiente número de objetos en Clustered Data ONTAP:</block>
-  <block id="be3aa891f1e256500ac418272b5eba57" category="list-text">100 máquinas virtuales de almacenamiento (SVM) (sin indicaciones)</block>
-  <block id="6d566731c48802fe3821e33a4c29bfb3" category="list-text">10 Máquinas virtuales de almacenamiento (con indicaciones)</block>
   <block id="5e21a9906ddd54cf24a9de122b49eeb1" category="list-text">1,500 LUN (por volumen FlexVol)</block>
   <block id="aa8573942cd1ed77a581b629e3ba2237" category="list-text">200 recursos compartidos de archivos CIFS (por volumen FlexVol)</block>
   <block id="ee001510f4b124ecdffc864a0edba76b" category="paragraph">Si el FlexVol contiene qtrees y volúmenes, los qtrees aparecen como directorios. Debe tener cuidado de no eliminar los qtrees accidentalmente al eliminar volúmenes.</block>
@@ -249,7 +240,6 @@
   <block id="f4c8242274a5433176fc6575733f6559" category="summary">El comando smis Volumes enumera los volúmenes tradicionales y flexibles para los sistemas de almacenamiento.</block>
   <block id="0f44b667bbfb5498165b4f0f5ca52339" category="doc">volúmenes smis</block>
   <block id="b78d25f27659bc706823fea082d9eb72" category="paragraph">La<block ref="0f44b667bbfb5498165b4f0f5ca52339" prefix=" " category="inline-code"></block> el comando enumera los volúmenes tradicionales y flexibles para los sistemas de almacenamiento.</block>
-  <block id="30789a6a7e76c03ee51006ffbbdd390c" category="paragraph">Para Clustered Data ONTAP, debe utilizar<block ref="9f0928f5c491149e0d68d561ecf558bc" prefix=" " category="inline-code"></block> en lugar de<block ref="0f44b667bbfb5498165b4f0f5ca52339" prefix=" " category="inline-code"></block> comando.</block>
   <block id="0f2d51f976100876529d8e039c4b9c36" category="paragraph">La<block ref="0f44b667bbfb5498165b4f0f5ca52339" prefix=" " category="inline-code"></block> comando y su salida abreviada:</block>
   <block id="b71369c2ed824034280dcb480153b41a" category="summary">Tener activado el seguimiento es importante para recopilar información para la solución de problemas. Sin embargo, tener activado el rastreo puede afectar el rendimiento, así que considere cuidadosamente lo que debe rastrearse y cuánto tiempo necesita activar el rastreo.</block>
   <block id="53af5324cc8ef40b65085e6267c7de4e" category="doc">Especificación de la configuración de seguimiento</block>
@@ -334,8 +324,6 @@
   <block id="d10e609c9f10971c9ad9a9e63ddc2439" category="list-text"><block ref="a17f982b9160cdf34c7049a017b28544" prefix="" category="inline-code"></block></block>
   <block id="655546f65ee5fb9186411efa5747bec4" category="paragraph">Nombre de la clase para la que desea información</block>
   <block id="c807c0fac735539610e5b517945b000e" category="paragraph">La<block ref="41baa3319f8fe6190c1bd12ca98cef92" prefix=" " category="inline-code"></block> comando y su salida abreviada:</block>
-  <block id="4dd620f035497b4c26fd3db7a737531e" category="summary">El proveedor SMI-S realiza llamadas API ONTAP (ONAPI) a los sistemas de almacenamiento. De forma predeterminada, el tiempo de espera de ONTAAPI es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos.</block>
-  <block id="2968f0fa1a0d4ef15b62ef7173cea84f" category="doc">Especifique el valor de tiempo de espera de ONAPI</block>
   <block id="c23ac41b72372a7f3c20cb975800351a" category="list-text">Cree una variable de entorno del sistema o del usuario denominada<block ref="5ecfd3e48a727110bc36d7f3790545a9" prefix=" " category="inline-code"></block> con el nuevo valor de tiempo de espera (en segundos).</block>
   <block id="f4136acb3cb5d0efffc517c067ddfd6c" category="summary">Puede especificar los componentes que se van a rastrear, el destino de seguimiento y el nivel de seguimiento. De manera opcional, puede cambiar el nombre y la ubicación del archivo de seguimiento si no desea utilizar el nombre y la ubicación predeterminados del archivo de seguimiento.</block>
   <block id="c56ac5615b54a034084151ae64ce2648" category="doc">Valores de configuración de seguimiento</block>
@@ -388,7 +376,6 @@
   <block id="bffde628bf79cfe9c51d3916acaf8a9d" category="paragraph">Muestra la versión de<block ref="782cf12ad9621d4dbedc43983800f6e7" prefix=" " category="inline-code"></block> Y OpenSLP.</block>
   <block id="58c8d351ba9d95afd9752aa88bf6e0f7" category="doc">El tamaño de los recursos compartidos de SMB desciende a 0 en SCVMM</block>
   <block id="d19b0ea77723113b53c5f3b5bcfc71cb" category="paragraph">El tamaño de recurso compartido de SMB 3.0 nuevo o existente puede caer a 0 en System Center Virtual Machine Manager (SCVMM).</block>
-  <block id="286cd1d6f9ece4f567a343b0e19efe60" category="paragraph">Este problema ocurre cuando la reinicialización de cuotas tarda mucho en Data ONTAP debido a un gran volumen de I/o, el tamaño de recurso compartido de SMB 3.0 nuevo o existente puede caer a 0 en SCVMM. Por este motivo, no es posible aprovisionar nuevas máquinas virtuales en los recursos compartidos SMB 3.0 nuevos o existentes.</block>
   <block id="cc5ade6a333e0665a7013fb0305400d6" category="list-text">Desactivar las cuotas.</block>
   <block id="448805fdc8b90fe55f76dbffe9cd446f" category="list-text">Agregue una regla de cuota predeterminada del tipo «'tree'» en cada volumen que aloje recursos compartidos de SMB.</block>
   <block id="4d2cce1528ba318942044838d5da6b76" category="list-text">Active las cuotas de esos volúmenes a los que se agregó una regla de cuota predeterminada y reinicie SMI-S Provider.</block>
@@ -471,22 +458,15 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas comerciales, patentes y mucho más.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legales</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Derechos de autor</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marcas comerciales</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, el logotipo de NETAPP y las marcas enumeradas en la página de marcas comerciales de NetApp son marcas comerciales de NetApp, Inc. Los demás nombres de empresas y productos son marcas comerciales de sus respectivos propietarios.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Estadounidenses</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Puede encontrar una lista actual de las patentes propiedad de NetApp en:</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Política de privacidad</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
-  <block id="24efa7ee4511563b16144f39706d594f" category="section-title">Aviso</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.</block>
   <block id="e746749730e661dd557a1c067c4dbe7d" category="inline-link">Aviso para el proveedor SMI-S de NetApp</block>
-  <block id="de70f78d604c1f59e6de2a196d7084c8" category="paragraph"><block ref="de70f78d604c1f59e6de2a196d7084c8" category="inline-link-rx"></block></block>
   <block id="db348a1845bc8863a15226d1296f5943" category="summary">SMI-S Provider de NetApp facilita la gestión y el control de los sistemas de almacenamiento, así como la gestión de LUN y volúmenes de sistemas de almacenamiento.</block>
   <block id="a6a30f6fc1ea5086f1f6a22630def76e" category="doc">Usos del proveedor SMI-S de NetApp</block>
-  <block id="df0ce33f18f070a6ddb1ef19fb303e98" category="paragraph">Puede utilizar SMI-S Provider de NetApp para gestionar controladoras de almacenamiento mediante System Center 2016 - Virtual Machine Manager o System Center 2016 - Virtual Machine Manager.</block>
   <block id="ce12ed3777878dc751489d09e13cb3e8" category="summary">Si tiene un problema con el proveedor SMI-S de NetApp, debe usar los mensajes de error que reciba para ayudarlo en la solución de problemas.</block>
   <block id="46e0d6cd9511768516cffae18f3cb5bc" category="summary">De forma predeterminada, se registran todos los mensajes del sistema. Además, de forma predeterminada, los registros de mensajes del sistema se encuentran en el directorio de registros del directorio en el que se ha instalado SMI-S Provider de NetApp. Puede cambiar la ubicación y el nivel de los mensajes del sistema que se escriben en el registro del servidor CIM. Por ejemplo, puede elegir que los registros se almacenen en un directorio que especifique y que sólo tenga mensajes fatales del sistema escritos en el registro del servidor CIM.</block>
   <block id="2a6456b036bc8393c319f1d0851d9f9e" category="doc">Configure las opciones del registro</block>
@@ -539,16 +519,9 @@
   <block id="03ef8ba810aaf28989881c22a0a0d0b4" category="paragraph">Si el seguimiento está activado, de forma predeterminada se guardan siete archivos de seguimiento. Si necesita guardar más archivos de seguimiento, puede aumentar el número máximo de archivos de seguimiento guardados estableciendo la variable de entorno<block ref="dc60c6d5318477708e7d97295ac7de59" prefix=" " category="inline-code"></block>. Si aumenta el número máximo de archivos de rastreo guardados, debe asegurarse de que el sistema tiene suficiente espacio en su disco duro para acomodar los archivos de rastreo.</block>
   <block id="cbef04286048616acf9addb6a24f4812" category="paragraph">Si el seguimiento está activado, la información de rastreo se escribe en<block ref="fa9f592613ea31a5e10e9623bb5fb444" prefix=" " category="inline-code"></block> archivo. Los archivos de seguimiento se giran. Cuando<block ref="fa9f592613ea31a5e10e9623bb5fb444" prefix=" " category="inline-code"></block> alcanza el tamaño máximo del archivo de seguimiento, su contenido se mueve al<block ref="1921b61929219aef25538b99f931a7b2" prefix=" " category="inline-code"></block> archivo. De forma predeterminada,<block ref="7b8b965ad4bca0e41ab51de7b31363a1" prefix=" " category="inline-code"></block> es un valor del 0 al 5. Si necesita guardar más archivos de seguimiento, aumente el valor de<block ref="b34672e49a34e1653202f1d550159fa9" prefix=" " category="inline-code"></block>.</block>
   <block id="c471bf926d3a641ea8147672e9dd849f" category="list-text">Cree una variable de entorno del sistema o del usuario denominada<block ref="dc60c6d5318477708e7d97295ac7de59" prefix=" " category="inline-code"></block> con el nuevo número de archivos de rastreo guardados.</block>
-  <block id="e14a9944fe8690b0f4a896ee4dd1b1bc" category="summary">El proveedor SMI-S de NetApp es compatible con las plataformas en clúster que ejecutan Data ONTAP 8.3.2 y ONTAP 9 y versiones posteriores.</block>
-  <block id="6ac98480cf75c6dae666143ef19e1b44" category="doc">Plataformas de clúster compatibles</block>
   <block id="62861fc78ada9051faca6fd4990e1665" category="paragraph">Para que el proveedor SMI-S de NetApp cree clones de volúmenes de almacenamiento (LUN), debe haber instalado una licencia de FlexClone en el sistema de almacenamiento.</block>
-  <block id="39a815a66b6abb4cbca8976fc7695c9e" category="paragraph">El proveedor SMI-S de NetApp es compatible con las siguientes plataformas:</block>
-  <block id="6b2c2280811e36eb16c24d5aa7a083b0" category="list-text">Sistemas de la serie FAS</block>
-  <block id="e5c7df601f61f29bd5487de4001b15d8" category="list-text">Sistemas de almacenamiento V-Series</block>
   <block id="7e58f3c32490291520a1a61221da598d" category="doc">Retorno de archivador: No hay elemento ONTAP como respuesta</block>
   <block id="6e2039d962c6e75488fd40f9c951c19a" category="paragraph"><block ref="7e58f3c32490291520a1a61221da598d" prefix="" category="inline-code"></block>.</block>
-  <block id="e229a1324a21093601dc13ac94ed1e4b" category="paragraph">Este mensaje se produce cuando se agota el tiempo de espera de la API ONTAPI. El tiempo de espera predeterminado de la API ONTAAPI es de 60 segundos, lo cual puede ser demasiado corto en algunos casos.</block>
-  <block id="520c461e0dad01779322190a189497d5" category="paragraph">Cambie el tiempo de espera de la API ONTAAPI a un valor superior a 60 segundos configurando la variable de entorno<block ref="5ecfd3e48a727110bc36d7f3790545a9" prefix=" " category="inline-code"></block>Y a continuación, reinicie SMI-S Provider.</block>
   <block id="ab5f12da21733b0c908a54fc6c8afeab" category="summary">Después de instalar el proveedor SMI-S de NetApp, debe comprobar que el servidor CIM se inició automáticamente después de acceder al proveedor SMI-S.</block>
   <block id="26578636423c50e0cbadb8e4def77602" category="doc">Verifique el estado del servidor CIM</block>
   <block id="7e2a994657c3cb1b74140df49210abda" category="list-text">Inicie sesión como administrador.</block>
@@ -652,7 +625,6 @@
   <block id="df08bacfdfa0f59296d2b2a817363f77" category="doc">Tecnología de clonado utilizada en SMI-S Provider</block>
   <block id="510d66d307c0496d6ba81658c7a5b619" category="paragraph">SMI-S Provider crea clones de LUN en ese sistema de almacenamiento mediante únicamente la tecnología FlexClone. Si no tiene una licencia de FlexClone, SMI-S Provider no genera clones mediante la tecnología de clonado de LUN y genera el siguiente mensaje de error:</block>
   <block id="d1da6127cf9130c3e6cbddab213daefb" category="paragraph"><block ref="8b4b67edf81c2ae95f92901ea8b1a9b2" prefix="" category="inline-code"></block></block>
-  <block id="ddd332cc6425680fe389737022cab8af" category="paragraph">Si tiene clones de LUN que se crearon con la tecnología de clonado de LUN y, a continuación, la versión de Data ONTAP se actualiza a la versión 7.3.1 o posterior, no puede usar SMI-S Provider para dividir esos clones. Deben ser gestionadas por el administrador del sistema de almacenamiento.</block>
   <block id="cd8b1d5e9b71ac8ad5a91871792b628e" category="summary">Puede desinstalar SMI-S Provider según sea necesario. Por ejemplo, según la versión de la instalación existente, es posible que deba desinstalar la instalación existente de SMI-S Provider antes de instalar la versión más reciente.</block>
   <block id="cb47c060d13b844bbad88867706d53e9" category="doc">Desinstale el proveedor SMI-S de NetApp desde un host de Windows</block>
   <block id="761c55faa74d365f19b35d0246718c76" category="paragraph">Si planea desinstalar SMI-S Provider y desea una reinstalación limpia, debe eliminar manualmente todo el contenido del servidor CIM.</block>
@@ -673,9 +645,6 @@
   <block id="74dd40aa9a6635d79204e610e8324c38" category="list-text">Microsoft Windows Server 2016</block>
   <block id="1ee2c5253c485a81cfff8c8e3e23a23f" category="list-text">Microsoft Windows Server 2019</block>
   <block id="89ff2866e74db001ea07e0b7fdde9ac5" category="paragraph">Las bibliotecas de tiempo de ejecución de Microsoft Visual C{pp} 2010 se instalan automáticamente durante la instalación del proveedor SMI-S. Para evitar posibles problemas relacionados con las bibliotecas de tiempo de ejecución, debe instalar Microsoft Visual C{pp} 2010 Redistributable Package (x86). desde la siguiente ubicación:<block ref="b7a41ff45868862feefaef480db2df7e" category="inline-link-rx"></block></block>
-  <block id="dc917e4fa1217c63d38aa1b4aacbe7ba" category="section-title">Requisito de SCVMM 2016 UR 2.1</block>
-  <block id="13601f1842a061432974c3d2a9141b74" category="paragraph">Se requiere el paquete acumulativo de actualizaciones de System Center Virtual Machine Manager (SCVMM) 2016 para 2.1 gestionar el servidor de archivos de NetApp con SMI-S Provider 5.2.4 y versiones posteriores de NetApp.</block>
-  <block id="10d506f406f3b135deaa62f78cfd5476" category="paragraph">Sin este UR, SCVMM 2016 muestra el valor de<block ref="207e174801113bba5afa048ccd3450bf" prefix=" " category="inline-code"></block> y..<block ref="6af63b14f64f6cb255988d8fde2e0437" prefix=" " category="inline-code"></block> opciones como<block ref="5406f75e1620d4c00bc95d050311cd8a" prefix=" " category="inline-code"></block> Para los archivos compartidos existentes en el servidor de archivos de NetApp.</block>
   <block id="05dbd63393cf525e41d034d5de449c98" category="paragraph">Para ejecutar SMI-S Provider, la máquina host del proveedor debe cumplir las siguientes especificaciones:</block>
   <block id="fd72eadfdaeb4e69b5477af765434a93" category="list-text">La máquina host del proveedor no se puede usar para alojar un nodo de Hyper-V.</block>
   <block id="b74c30689c8afa829d128cf3e62d6817" category="list-text">SCVMM no debe estar ejecutándose en el equipo host del proveedor.</block>
@@ -710,12 +679,8 @@
   <block id="4394c1c9677b993b84d961f7bb18bf5f" category="list-text"><block ref="224ad2b629d91ab05d786799ad174419" prefix="*" category="inline-code"></block>*</block>
   <block id="3dfb3bf4c92bfb4c88b522eeda68f2ee" category="paragraph">Activa la seguridad para las URL recibidas y las listas de atributos.</block>
   <block id="f1481b88ec73ef72260ea756192ce7d8" category="paragraph">A continuación se muestra un ejemplo abreviado de<block ref="cd8fa2e8a9ca8395c90e6d05c6dd4df4" prefix=" " category="inline-code"></block> archivo de configuración:</block>
-  <block id="591f96ef7fe1cdb42aa58f385466c717" category="summary">Proporciona información sobre las funciones, las limitaciones y los problemas conocidos del software SMI-S Provider 5.2.6 de NetApp.</block>
   <block id="336d68bc1f4a7a4dd4d6826a8c11877e" category="doc">Notas de la versión del proveedor SMI-S de NetApp</block>
-  <block id="6e3b9e20f7f45cc7004fb8412900830e" category="paragraph">La<block ref="b5aeaaea80149eaf6be32e7995332412" category="inline-link-rx"></block> describa las nuevas funciones, las notas de actualización, los problemas solucionados, las limitaciones conocidas y los problemas conocidos.</block>
-  <block id="36bc4391121621ccbd43a1d20890bbfb" category="summary">Puede instalar el software SMI-S Provider de NetApp para que pueda gestionar los sistemas de almacenamiento que ejecutan Data ONTAP. De forma predeterminada, el software SMI-S Provider de NetApp se instala en el directorio C:\Archivos de programa (x86)\NetApp\smis\pegasus.</block>
   <block id="b7ceff6488201ada2adc1183d4779baa" category="doc">Instale el proveedor SMI-S de NetApp en un host Windows</block>
-  <block id="b7c334318e075f9c3e093acfe23e8a85" category="paragraph">Puede instalar el software SMI-S Provider de NetApp para que pueda gestionar los sistemas de almacenamiento que ejecutan Data ONTAP. Sin embargo, no es posible revertir o degradar a una versión anterior. De manera predeterminada, el software SMI-S Provider de NetApp se instala en la<block ref="e93eb95a4a6d54999769913bf79a69c9" prefix=" " category="inline-code"></block> directorio.</block>
   <block id="e9c2e2fe706f7cb451b683459ed09ff9" category="paragraph">Debe tener ya las siguientes credenciales y software:</block>
   <block id="b08dc0dbe07b37cce50f2429165603b4" category="list-text">Credenciales de inicio de sesión para la cuenta de administrador de Windows</block>
   <block id="99b057df2c522b2a7b89ebfdd2f864f4" category="list-text">Paquete de software SMI-S Provider de NetApp</block>
@@ -755,7 +720,6 @@
   <block id="2648540719848b041df79e729eb23829" category="paragraph">La<block ref="7e83e52e854ff8058176500bc4ad34d0" prefix=" " category="inline-code"></block> Command muestra la información actual de configuración del servidor CIM.</block>
   <block id="7ebbcaa199bd513217c822dd7063d75b" category="paragraph"><block ref="7e83e52e854ff8058176500bc4ad34d0" prefix="" category="inline-code"></block></block>
   <block id="64c64b170c567596739e79f28df4a5e8" category="paragraph">La<block ref="7e83e52e854ff8058176500bc4ad34d0" prefix=" " category="inline-code"></block> y su salida:</block>
-  <block id="24293140a3816d75c19d74064899984b" category="summary">El proveedor SMI-S de NetApp 5.2.5 permite gestionar y supervisar sistemas de almacenamiento, así como gestionar LUN y volúmenes de sistemas de almacenamiento, opciones de configuración de CIMOM y usuarios del servidor CIM.</block>
   <block id="c79b9638e429df89a219f67e64877677" category="paragraph">SMI-S Provider de NetApp es una interfaz basada en comandos que detecta y gestiona plataformas que ejecutan software ONTAP. SMI-S Provider utiliza los protocolos de gestión empresarial basada en web (WBEM), que le permiten gestionar, supervisar e informar sobre los elementos de almacenamiento.</block>
   <block id="a316d32069744858b73bc2472339bb1d" category="paragraph">SMI-S Provider de NetApp sigue los esquemas estandarizados por dos organizaciones:</block>
   <block id="ffb373b0246b03d37058c9917311f9ba" category="inline-link">Grupo de tareas de administración distribuida (DMTF)</block>
@@ -790,9 +754,7 @@
   <block id="3e24f09af977e3a1af1e1cc6f13f637c" category="doc">Problemas con la biblioteca de tiempo de ejecución</block>
   <block id="dc1ea37bf28d57aab9a40d7069475d46" category="paragraph">Se encuentran problemas con la biblioteca de tiempo de ejecución.</block>
   <block id="8f0d9a411b41d0b986920c85c2535cd2" category="paragraph">Instale Microsoft Visual C{pp} 2010 Redistributable Package (x86) desde www.microsoft.com.</block>
-  <block id="f7f67a4b989755c831e2703c64ac314b" category="summary">El comando Thesmis discos muestra información de disco para los sistemas de almacenamiento. Los discos smis solo funcionan cuando se utilizan con las controladoras Data ONTAP 7-Mode.</block>
   <block id="001e1f541b1e42bd39ea2ea40c19ea63" category="doc">discos smis</block>
-  <block id="d21c1931b01f62c3b9c02c100019a202" category="paragraph">La<block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix="" category="inline-code"></block> el comando muestra información del disco para los sistemas de almacenamiento.<block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix=" " category="inline-code"></block> Solo funciona cuando se utiliza con controladoras Data ONTAP 7-Mode.</block>
   <block id="1ac1bc188887b49a916919759fa511f6" category="paragraph">La<block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix=" " category="inline-code"></block> comando y su salida abreviada:</block>
   <block id="5bd3f03785e49f0f092f2bf6dbe62ea2" category="doc">Posibles errores al cargar bibliotecas compartidas</block>
   <block id="051be6f17b1853fd1a87bd720d73057b" category="list-text">*Mensajes*</block>
@@ -872,7 +834,6 @@
   <block id="11db62ef1b82524e398ad3812618f7ea" category="doc">El proveedor SMI-S de NetApp tarda mucho en iniciarse</block>
   <block id="a3519a79e1fa4e9109ec373b28d1609d" category="paragraph">En sistemas Windows, con sistemas de almacenamiento que ya están en gestión, al iniciar el proveedor de SMI-S de NetApp mediante la<block ref="539dd095e3626609596c19bb68975d4b" prefix=" " category="inline-code"></block> comando, el comando no regresa hasta que se completa la caché local del proveedor. Espera un máximo de 15 minutos mientras se llena la caché y no se puede usar SMI-S Provider de NetApp hasta que vuelva.</block>
   <block id="f9ac0617143317e28bbf839b5d2db80a" category="paragraph">Con el<block ref="539dd095e3626609596c19bb68975d4b" prefix=" " category="inline-code"></block> El comando es el método recomendado para iniciar NetApp SMI-S Provider.</block>
-  <block id="1cedcb17c92a3535c2610261b466714a" category="summary">Puede gestionar la configuración avanzada de SMI-S Provider, como especificar el intervalo de actualización de caché de SMI-S, el tiempo de espera de ONAPI y el número máximo de subprocesos por cola de servicio de mensajes.</block>
   <block id="c95a373760253d51b1cf803ea80f5ddf" category="summary">Para utilizar el proveedor SMI-S de NetApp, debe tener las licencias requeridas.</block>
   <block id="085f5df3ea322139c5a71aed9fd908cd" category="doc">Licencias requeridas</block>
   <block id="69b6c0623415c79e8aa2a026499ac1b6" category="paragraph">Se requieren las siguientes licencias para el proveedor SMI-S de NetApp:</block>
@@ -911,4 +872,52 @@
   <block id="5940103c9703f3197b9db75e060cdcbc" category="paragraph">La variable se define al abrir una nueva sesión de símbolo del sistema.</block>
   <block id="5d46f0ef9c5d5b1b112b901048bd8b85" category="list-text">Desplácese hasta la<block ref="0a36b8ad7af6adf0c1d5daa0a3240994" prefix=" " category="inline-code"></block> directorio:</block>
   <block id="82e1f4ca9abf9652748d9a698fc051c7" category="paragraph"><block ref="a9bf600e3f42bfde86bd479b9fcaec63" prefix="" category="inline-code"></block></block>
+  <block id="48bc52cab1e5701702bc6f42f3024f6e" category="paragraph">Si tiene clones de las LUN que se crearon mediante la tecnología de clonación de LUN y la versión de ONTAP se actualiza a la versión 7.3.1 o posterior, no puede utilizar SMI-S Provider para dividir dichos clones. Deben ser gestionadas por el administrador del sistema de almacenamiento.</block>
+  <block id="3793e9a4bb699472d6c18b28d016f662" category="summary">Puede gestionar la configuración avanzada del proveedor SMI-S, como especificar el intervalo de actualización de caché SMI-S, el tiempo de espera de llamada a la API de ONTAP y el número máximo de threads por cola de servicio de mensajes.</block>
+  <block id="7b6fbb88e3bf9e8b80df39afd6ae70e2" category="summary">El proveedor SMI-S de NetApp 5.2.7 permite gestionar y supervisar sistemas de almacenamiento, así como gestionar LUN y volúmenes de sistemas de almacenamiento, opciones de configuración de CIMOM y usuarios del servidor CIM.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Código abierto</block>
+  <block id="627e4a7f98749d4e647b18565a55c01a" category="paragraph"><block ref="627e4a7f98749d4e647b18565a55c01a" category="inline-link-macro-rx"></block></block>
+  <block id="cf0ec6c9da7f221854f606212c7e5489" category="summary">¿Cuáles son las novedades de 5.2.7</block>
+  <block id="8cdc91a8be8828bc0479b47f30fdae33" category="doc">¿Cuáles son las novedades en 5.2.7</block>
+  <block id="e948f2d578d6a0f54741eda35d72d355" category="list-text">No hay ninguna ruta de actualización disponible para SMI-S Provider 5.2.7.</block>
+  <block id="101dd88b1b293d47bc2c4e1aa268558e" category="list-text">Debe poner en marcha SMI-S Provider 5.2.7 como una nueva instalación.</block>
+  <block id="4ec696bde1d3e1f41e9b67c2a35eba60" category="list-text">La gestión de SnapMirror con Azure Site Recovery no es compatible con esta versión del proveedor SMI-S.</block>
+  <block id="4775945e20929f33ad1d62cb4602a93d" category="paragraph">*Para usuarios de Windows*</block>
+  <block id="b2c38293fdc487e8a8d344b8402c74c5" category="list-text">SMI-S Provider 5.2.7 es compatible con Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016, SCVMM 2025, SCVMM 2022, SCVMM 2019 y SCVMM 2016.</block>
+  <block id="a4c64014c3378c5dd1a4c6bb00bf10a2" category="paragraph">Este mensaje se produce cuando se agota el tiempo de espera de la llamada a la API de ONTAP. El tiempo de espera predeterminado de la llamada a la API de ONTAP es de 60 segundos, lo que podría ser demasiado corto en algunos casos.</block>
+  <block id="0afc1caff128363a5d573c8e1df54406" category="paragraph">Cambie el tiempo de espera de la llamada API de ONTAP a un valor superior a 60 segundos. Para ello, configure la variable de entorno<block ref="5ecfd3e48a727110bc36d7f3790545a9" prefix=" " category="inline-code"></block> y, a continuación, reinicie SMI-S. Provider.</block>
+  <block id="87dfe5752ca71d1f4b3849613b921207" category="paragraph">Si la reinicialización de cuota tarda mucho tiempo en ONTAP debido a una gran cantidad de I/O, el tamaño del recurso compartido de SMB 3,0 nuevo o existente puede reducirse a 0 en SCVMM. Cuando se produce este problema, no es posible aprovisionar nuevas máquinas virtuales en recursos compartidos SMB 3,0 nuevos o existentes.</block>
+  <block id="66341f3073d04fff4ddc353f99109815" category="paragraph">El proveedor de SMI-S de NetApp puede administrar hasta las siguientes cantidades de objetos en ONTAP:</block>
+  <block id="0e4114de3f4cb820d8d7a1782e32b659" category="list-text">Máquinas virtuales de almacenamiento de 30 GB (SVM) </block>
+  <block id="7de381613d186c65626f4ab272a71cf2" category="list-text">100 SVM (sin indicaciones)</block>
+  <block id="8b25443fa653d6b8b9930467ae62d747" category="list-text">10 SVM (con indicaciones)</block>
+  <block id="0639b789908acee0010a728c19ad44b5" category="summary">El proveedor de SMI-S de NetApp es compatible con plataformas de clústeres que ejecutan ONTAP 9 y versiones posteriores.</block>
+  <block id="d9085d6c5079a361332e427a284bb7ad" category="doc">Compatibilidad con el proveedor SMI-S de NetApp para sistemas ONTAP</block>
+  <block id="1f66c2179d8c6efe8772822bfc2d617e" category="paragraph">El proveedor SMI-S de NetApp es compatible con sistemas FAS.</block>
+  <block id="58278fc92b6745b5bcadad3d3f612fc1" category="paragraph">El proveedor SMI-S de NetApp no es compatible con sistemas ASA.</block>
+  <block id="b9bc2a483649514f398dbc07af2c87c7" category="summary">El comando smis disks muestra información del disco para los sistemas de almacenamiento. Los discos smis solo funcionan cuando se utilizan con las controladoras de ONTAP 7-Mode.</block>
+  <block id="487313fb24a8cbf19d58bad085b12a13" category="paragraph"><block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix=" " category="inline-code"></block>El comando muestra información de disco para los sistemas de almacenamiento. <block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix=" " category="inline-code"></block>El comando solo se admite en las controladoras ONTAP 7-Mode.</block>
+  <block id="efad0d1809b94075c94937353c4001ef" category="paragraph">Para ONTAP, tiene que utilizar<block ref="9f0928f5c491149e0d68d561ecf558bc" prefix=" " category="inline-code"></block> el comando en lugar<block ref="0f44b667bbfb5498165b4f0f5ca52339" prefix=" " category="inline-code"></block> del comando.</block>
+  <block id="6ed0120f37738e825d889dcb299d9251" category="list-text">Microsoft Windows Server 2022</block>
+  <block id="6e6b7efb9f9c24d5ca212d65430689fd" category="list-text">Microsoft Windows Server 2025</block>
+  <block id="fcebb93ad5cad2ad8092153d77893f24" category="section-title">Requisito de SCVMM UR 2,1</block>
+  <block id="a66b176f80a3f93d31be0edb241f3215" category="paragraph">Se requiere el paquete acumulativo de actualizaciones (UR) 2,1 de System Center Virtual Machine Manager (SCVMM) para gestionar el servidor de archivos de NetApp con el proveedor de NetApp SMI-S 5.2.7 y versiones posteriores.</block>
+  <block id="77e677c64c1986dc2a8a1c9afdb930e8" category="paragraph">Sin este UR, SCVMM (versión 2016, 2019, 2022 o 2025) muestra el valor de las<block ref="207e174801113bba5afa048ccd3450bf" prefix=" " category="inline-code"></block> opciones y<block ref="6af63b14f64f6cb255988d8fde2e0437" prefix=" " category="inline-code"></block> en cuanto<block ref="5406f75e1620d4c00bc95d050311cd8a" prefix=" " category="inline-code"></block> a los recursos compartidos de archivos existentes en el servidor de archivos NetApp.</block>
+  <block id="9794792e794e863d0bd2afdc0bc7a283" category="paragraph">Es posible usar el proveedor de SMI-S de NetApp para gestionar controladoras de almacenamiento que utilizan System Center 2016, 2019, 2022 y 2025.</block>
+  <block id="60f804573e049a0f18647ca5ddadf79f" category="list-text">Para cada equipo host conectado a ONTAP, abra la aplicación MPIO y añada el siguiente ID de hardware:</block>
+  <block id="bfdf270b33cb3dc13957bd36fee69058" category="list-text">Para ONTAP, introduzca<block ref="ade191b1004522550d83e818f2d7139d" prefix=" " category="inline-code"></block>.</block>
+  <block id="cf0d6d290cc1c4520fbbfc002c946664" category="summary">Proporciona información sobre las funciones, las limitaciones y los problemas conocidos del software SMI-S Provider 5.2.7 de NetApp.</block>
+  <block id="24b5861592ee7b4615fa625b97669f21" category="paragraph"><block ref="f88e2f39ae65eb4268159ba7fe6b9dda" category="inline-link-rx"></block>Describa las nuevas funciones, notas de actualización, problemas solucionados, limitaciones conocidas y problemas conocidos.</block>
+  <block id="c77d93c9bafb13a9882093351ecdb498" category="summary">Puede instalar el software SMI-S Provider de NetApp para poder gestionar los sistemas de almacenamiento que ejecutan ONTAP. De forma predeterminada, el software SMI-S Provider de NetApp se instala en el directorio C:\Archivos de programa (x86)\NetApp\smis\pegasus.</block>
+  <block id="a29f0f75cbf44d12b1fb98ed37473297" category="paragraph">Puede instalar el software SMI-S Provider de NetApp para poder gestionar los sistemas de almacenamiento que ejecutan ONTAP. Sin embargo, no es posible revertir o degradar a una versión anterior. De forma predeterminada, el software del proveedor SMI-S de NetApp se instala en<block ref="e93eb95a4a6d54999769913bf79a69c9" prefix=" " category="inline-code"></block> el directorio.</block>
+  <block id="738fc2618ae3cc77b3d364faaf5e4b42" category="summary">El proveedor SMI-S hace llamadas API de ONTAP a los sistemas de almacenamiento. De manera predeterminada, el tiempo de espera de la llamada API de ONTAP es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos.</block>
+  <block id="7162b9fa7c706619cc067c40bb9d383b" category="doc">Especifique el valor de tiempo de espera de llamada a la API de ONTAP</block>
 </blocks>

@@ -15,10 +15,11 @@ Conocer el número máximo de sistemas gestionados por SMI-S Provider de NetApp 
 
 *Tamaño*
 
-El proveedor SMI-S de NetApp puede gestionar hasta el siguiente número de objetos en Clustered Data ONTAP:
+El proveedor de SMI-S de NetApp puede administrar hasta las siguientes cantidades de objetos en ONTAP:
 
-* 100 máquinas virtuales de almacenamiento (SVM) (sin indicaciones)
-* 10 Máquinas virtuales de almacenamiento (con indicaciones)
+* Máquinas virtuales de almacenamiento de 30 GB (SVM) 
+* 100 SVM (sin indicaciones)
+* 10 SVM (con indicaciones)
 * 1,500 LUN (por volumen FlexVol)
 * 200 recursos compartidos de archivos CIFS (por volumen FlexVol)
 

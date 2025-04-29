@@ -20,13 +20,13 @@ sidebar:
     - title: Novedades en esta versión
       url: "/reference-new-in-this-release-smis.html"
     - title: Usos del proveedor SMI-S de NetApp
-      url: "/reference-uses-of-data-ontap-smi-s-agent.html"
+      url: "/reference-uses-of-ontap-smi-s-agent.html"
     - title: Ajuste de tamaño y rendimiento del proveedor SMI-S de NetApp
       url: "/reference-smi-s-agent-sizing-and-performance-information.html"
     - title: Componentes del proveedor SMI-S de NetApp
-      url: "/reference-data-ontap-smi-s-agent-components.html"
+      url: "/reference-ontap-smi-s-agent-components.html"
     - title: Protocolos del proveedor SMI-S de NetApp
-      url: "/reference-data-ontap-smi-s-agent-protocols.html"
+      url: "/reference-ontap-smi-s-agent-protocols.html"
     - title: Cómo interactúa el proveedor SMI-S de NetApp con un host
       url: "/concept-how-smi-s-provider-interacts-with-a-host.html"
     - title: Perfiles SMI-S.
@@ -43,8 +43,8 @@ sidebar:
       url: "/reference-hardware-requirements.html"
     - title: Licencias requeridas
       url: "/reference-required-licenses.html"
-    - title: Plataformas de clúster compatibles
-      url: "/reference-supported-platforms.html"
+    - title: Compatibilidad con el proveedor SMI-S de NetApp para sistemas ONTAP
+      url: "/reference-smi-s-support-ontap-systems.html"
     - title: Descargue el paquete de software SMI-S Provider de NetApp
       url: "/task-download-smi-s-provider.html"
   - title: Instale el proveedor SMI-S de NetApp
@@ -111,8 +111,8 @@ sidebar:
       url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
     - title: Especifique el valor de vida útil del trabajo concreto
       url: "/task-specify-the-concrete-job-lifetime-value.html"
-    - title: Especifique el valor de tiempo de espera de ONAPI
-      url: "/task-specify-the-ontapi-timeout-value.html"
+    - title: Especifique el valor de tiempo de espera de llamada a la API de ONTAP
+      url: "/task-specify-the-ontap-api-call-timeout-value.html"
     - title: Especifique el número máximo de subprocesos por cola de servicio de mensajes
       url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
     - title: Habilitar o deshabilitar la autenticación para SMI-S Provider de NetApp
@@ -248,4 +248,4 @@ sidebar:
         con el proveedor SMI-S.
       url: "/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html"
   - title: Avisos legales
-    url: "/reference-legal-notices.html"
+    url: "/legal-notices.html"

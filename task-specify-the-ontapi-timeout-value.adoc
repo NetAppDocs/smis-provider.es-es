@@ -1,17 +1,17 @@
 ---
 permalink: task-specify-the-ontapi-timeout-value.html 
 sidebar: sidebar 
-keywords: smi-s provider, ontap api, calls, storage systems, ontapi, default, 300 sec 
-summary: 'El proveedor SMI-S realiza llamadas API ONTAP (ONAPI) a los sistemas de almacenamiento. De forma predeterminada, el tiempo de espera de ONTAAPI es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos.' 
+keywords: smi-s provider, ontap api, calls, storage systems, default, 300 sec 
+summary: El proveedor SMI-S hace llamadas API de ONTAP a los sistemas de almacenamiento. De manera predeterminada, el tiempo de espera de la llamada API de ONTAP es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos. 
 ---
-= Especifique el valor de tiempo de espera de ONAPI
+= Especifique el valor de tiempo de espera de llamada a la API de ONTAP
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-El proveedor SMI-S realiza llamadas API ONTAP (ONAPI) a los sistemas de almacenamiento. De forma predeterminada, el tiempo de espera de ONTAAPI es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos.
+El proveedor SMI-S hace llamadas API de ONTAP a los sistemas de almacenamiento. De manera predeterminada, el tiempo de espera de la llamada API de ONTAP es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos.
 
 .Antes de empezar
 * Ya debe tener credenciales de inicio de sesión como Administrador.

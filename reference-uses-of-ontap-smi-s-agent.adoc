@@ -13,4 +13,4 @@ summary: SMI-S Provider de NetApp facilita la gestión y el control de los siste
 [role="lead"]
 SMI-S Provider de NetApp facilita la gestión y el control de los sistemas de almacenamiento, así como la gestión de LUN y volúmenes de sistemas de almacenamiento.
 
-Puede utilizar SMI-S Provider de NetApp para gestionar controladoras de almacenamiento mediante System Center 2016 - Virtual Machine Manager o System Center 2016 - Virtual Machine Manager.
+Es posible usar el proveedor de SMI-S de NetApp para gestionar controladoras de almacenamiento que utilizan System Center 2016, 2019, 2022 y 2025.

@@ -16,7 +16,7 @@ El tamaño de recurso compartido de SMB 3.0 nuevo o existente puede caer a 0 en 
 
 * *Causa*
 +
-Este problema ocurre cuando la reinicialización de cuotas tarda mucho en Data ONTAP debido a un gran volumen de I/o, el tamaño de recurso compartido de SMB 3.0 nuevo o existente puede caer a 0 en SCVMM. Por este motivo, no es posible aprovisionar nuevas máquinas virtuales en los recursos compartidos SMB 3.0 nuevos o existentes.
+Si la reinicialización de cuota tarda mucho tiempo en ONTAP debido a una gran cantidad de I/O, el tamaño del recurso compartido de SMB 3,0 nuevo o existente puede reducirse a 0 en SCVMM. Cuando se produce este problema, no es posible aprovisionar nuevas máquinas virtuales en recursos compartidos SMB 3,0 nuevos o existentes.
 
 * *Acción Correctiva*
 +
