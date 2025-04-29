@@ -1,5 +1,5 @@
 ---
-permalink: task-specify-the-ontapi-timeout-value.html 
+permalink: task-specify-the-ontap-api-call-timeout-value.html 
 sidebar: sidebar 
 keywords: smi-s provider, ontap api, calls, storage systems, default, 300 sec 
 summary: El proveedor SMI-S hace llamadas API de ONTAP a los sistemas de almacenamiento. De manera predeterminada, el tiempo de espera de la llamada API de ONTAP es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos. 
