@@ -25,7 +25,7 @@ Un usuario con un nombre de usuario y una contraseña válidos
 
 La `slp.conf` El archivo de configuración permite cambiar el número de interfaces que un host escucha para las solicitudes SLP y el número de direcciones IP que un host utiliza para la multidifusión.
 
-Utilice un editor de texto para abrir el `slp.conf`.
+Utilice un editor de texto para abrir el `slp.conf` archivo.
 
 .Parámetros
 * *`interfaces`*
@@ -51,7 +51,6 @@ A continuación se muestra un ejemplo abreviado de `slp.conf` archivo de configu
 
 [listing]
 ----
-
 ################################################################
 # OpenSLP configuration file
 # Format and contents conform to specification in IETF RFC 2614 so

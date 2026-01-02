@@ -644,18 +644,8 @@
   <block id="aea23489ce3aa9b6406ebb28e0cda430" category="paragraph">Windows</block>
   <block id="74dd40aa9a6635d79204e610e8324c38" category="list-text">Microsoft Windows Server 2016</block>
   <block id="1ee2c5253c485a81cfff8c8e3e23a23f" category="list-text">Microsoft Windows Server 2019</block>
-  <block id="89ff2866e74db001ea07e0b7fdde9ac5" category="paragraph">Las bibliotecas de tiempo de ejecución de Microsoft Visual C{pp} 2010 se instalan automáticamente durante la instalación del proveedor SMI-S. Para evitar posibles problemas relacionados con las bibliotecas de tiempo de ejecución, debe instalar Microsoft Visual C{pp} 2010 Redistributable Package (x86). desde la siguiente ubicación:<block ref="b7a41ff45868862feefaef480db2df7e" category="inline-link-rx"></block></block>
   <block id="05dbd63393cf525e41d034d5de449c98" category="paragraph">Para ejecutar SMI-S Provider, la máquina host del proveedor debe cumplir las siguientes especificaciones:</block>
-  <block id="fd72eadfdaeb4e69b5477af765434a93" category="list-text">La máquina host del proveedor no se puede usar para alojar un nodo de Hyper-V.</block>
-  <block id="b74c30689c8afa829d128cf3e62d6817" category="list-text">SCVMM no debe estar ejecutándose en el equipo host del proveedor.</block>
   <block id="b821588d84782d0b1d55c19cfdb5b9b4" category="list-text">El equipo host del proveedor no debe ejecutar otros programas que requieran mucha memoria.</block>
-  <block id="e7a61d9bf7f995d12bec06e5dc826433" category="list-text">El equipo host del proveedor no debe ejecutar proveedores de SMI-S desde ningún otro proveedor.</block>
-  <block id="9e6a91e446af633c638f982317104862" category="paragraph">Se admiten los siguientes hipervisores:</block>
-  <block id="aac0de225be44800bd6bac76c5eb4a63" category="list-text">Microsoft Windows Server 2016 Hyper-V.</block>
-  <block id="be90425df543f66a8660032f3bec11ea" category="list-text">ESX de VMware 5.0</block>
-  <block id="ced23abf6261326792853710d17c1e64" category="list-text">ESX de VMware 5.1</block>
-  <block id="1c34588d8157e46be3e3ed89163e2d36" category="list-text">ESX de VMware 5.5</block>
-  <block id="c3b86f2f3b5685e4fd42669ba402e8d2" category="list-text">ESX de VMware 6.0</block>
   <block id="7379ebb6b8630c14b864b4d46e315c94" category="doc">Error de acceso denegado</block>
   <block id="3330b82e78f9fa2566cd61f87d85e1eb" category="paragraph"><block ref="140e45486daa741980d7078a91e4d763" prefix="" category="inline-code"></block></block>
   <block id="acc86bed5a3cbee4c10612afddcbd9b8" category="paragraph">Este mensaje ocurre en dos situaciones posibles:</block>
@@ -669,7 +659,6 @@
   <block id="835376d40913a770b6afbedee870d08d" category="paragraph">La<block ref="cd8fa2e8a9ca8395c90e6d05c6dd4df4" prefix=" " category="inline-code"></block> El archivo de configuración proporciona opciones adicionales que le permiten administrar un servidor de daemon de protocolo de ubicación de servicio (SLPD).</block>
   <block id="d09e7ed0d3d5bcf9b4d891eb75068566" category="paragraph"><block ref="d7bfcf794780fcefaeafa8a22adb6739" prefix="" category="inline-code"></block></block>
   <block id="c27013a5a91be7a7f811990b4c345c0c" category="paragraph">La<block ref="cd8fa2e8a9ca8395c90e6d05c6dd4df4" prefix=" " category="inline-code"></block> El archivo de configuración permite cambiar el número de interfaces que un host escucha para las solicitudes SLP y el número de direcciones IP que un host utiliza para la multidifusión.</block>
-  <block id="8a89bc88abd7f83c0aa84b1d5d0d605d" category="paragraph">Utilice un editor de texto para abrir el<block ref="cd8fa2e8a9ca8395c90e6d05c6dd4df4" prefix=" " category="inline-code"></block>.</block>
   <block id="a49a968397d3eea3b27de92643158cbc" category="list-text"><block ref="ad63a35ea2ac8a42233e5ac6cb325d34" prefix="*" category="inline-code"></block>*</block>
   <block id="e14a37b48112f37a804ec03c140c064a" category="paragraph">Especifica el número máximo de direcciones IP que un host puede escuchar para las solicitudes SLP.</block>
   <block id="8423702607bab52f36dd74e369cc82b7" category="list-text"><block ref="6087b5325467bcd38d27ab67ec7e7861" prefix="*" category="inline-code"></block>*</block>
@@ -908,9 +897,6 @@
   <block id="efad0d1809b94075c94937353c4001ef" category="paragraph">Para ONTAP, tiene que utilizar<block ref="9f0928f5c491149e0d68d561ecf558bc" prefix=" " category="inline-code"></block> el comando en lugar<block ref="0f44b667bbfb5498165b4f0f5ca52339" prefix=" " category="inline-code"></block> del comando.</block>
   <block id="6ed0120f37738e825d889dcb299d9251" category="list-text">Microsoft Windows Server 2022</block>
   <block id="6e6b7efb9f9c24d5ca212d65430689fd" category="list-text">Microsoft Windows Server 2025</block>
-  <block id="fcebb93ad5cad2ad8092153d77893f24" category="section-title">Requisito de SCVMM UR 2,1</block>
-  <block id="a66b176f80a3f93d31be0edb241f3215" category="paragraph">Se requiere el paquete acumulativo de actualizaciones (UR) 2,1 de System Center Virtual Machine Manager (SCVMM) para gestionar el servidor de archivos de NetApp con el proveedor de NetApp SMI-S 5.2.7 y versiones posteriores.</block>
-  <block id="77e677c64c1986dc2a8a1c9afdb930e8" category="paragraph">Sin este UR, SCVMM (versión 2016, 2019, 2022 o 2025) muestra el valor de las<block ref="207e174801113bba5afa048ccd3450bf" prefix=" " category="inline-code"></block> opciones y<block ref="6af63b14f64f6cb255988d8fde2e0437" prefix=" " category="inline-code"></block> en cuanto<block ref="5406f75e1620d4c00bc95d050311cd8a" prefix=" " category="inline-code"></block> a los recursos compartidos de archivos existentes en el servidor de archivos NetApp.</block>
   <block id="9794792e794e863d0bd2afdc0bc7a283" category="paragraph">Es posible usar el proveedor de SMI-S de NetApp para gestionar controladoras de almacenamiento que utilizan System Center 2016, 2019, 2022 y 2025.</block>
   <block id="60f804573e049a0f18647ca5ddadf79f" category="list-text">Para cada equipo host conectado a ONTAP, abra la aplicación MPIO y añada el siguiente ID de hardware:</block>
   <block id="bfdf270b33cb3dc13957bd36fee69058" category="list-text">Para ONTAP, introduzca<block ref="ade191b1004522550d83e818f2d7139d" prefix=" " category="inline-code"></block>.</block>
@@ -920,4 +906,11 @@
   <block id="a29f0f75cbf44d12b1fb98ed37473297" category="paragraph">Puede instalar el software SMI-S Provider de NetApp para poder gestionar los sistemas de almacenamiento que ejecutan ONTAP. Sin embargo, no es posible revertir o degradar a una versión anterior. De forma predeterminada, el software del proveedor SMI-S de NetApp se instala en<block ref="e93eb95a4a6d54999769913bf79a69c9" prefix=" " category="inline-code"></block> el directorio.</block>
   <block id="738fc2618ae3cc77b3d364faaf5e4b42" category="summary">El proveedor SMI-S hace llamadas API de ONTAP a los sistemas de almacenamiento. De manera predeterminada, el tiempo de espera de la llamada API de ONTAP es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos.</block>
   <block id="7162b9fa7c706619cc067c40bb9d383b" category="doc">Especifique el valor de tiempo de espera de llamada a la API de ONTAP</block>
+  <block id="2a5f6638ef24c976e6df1a332e199b6f" category="paragraph">Utilice un editor de texto para abrir el<block ref="cd8fa2e8a9ca8395c90e6d05c6dd4df4" prefix=" " category="inline-code"></block> archivo.</block>
+  <block id="4d93c7f951ee9893244700500c246604" category="paragraph">Le recomendamos que instale SMI-S Provider en su propia máquina virtual (VM) de Windows dedicada. Esta máquina virtual puede estar en el mismo dominio para permitir una administración segura y conveniente.</block>
+  <block id="9822409bbabbad1f2c0e3d15465983b3" category="paragraph">Las bibliotecas de tiempo de ejecución de Microsoft Visual C{pp} 2010 se instalan automáticamente durante la instalación del proveedor SMI-S. Para evitar posibles problemas relacionados con las bibliotecas de tiempo de ejecución, debe instalar Microsoft Visual C{pp} 2010 Redistributable Package (x86) desde la siguiente ubicación:<block ref="b7a41ff45868862feefaef480db2df7e" category="inline-link-rx"></block></block>
+  <block id="78d9d7434c061e2d05638600805e10c2" category="section-title">Asegúrese de que el equipo host del proveedor cumpla con las especificaciones</block>
+  <block id="7455ebb8e235fe565c33132298dc9ae2" category="list-text">El proveedor no se puede instalar directamente en un nodo Hyper-V. En su lugar, puede instalarlo en una máquina virtual Hyper-V.</block>
+  <block id="76e285f066350a12e27bc3bc52c6ac1b" category="list-text">El System Center Virtual Machine Manager (SCVMM) no debe estar ejecutándose en la máquina host del proveedor.</block>
+  <block id="cf25bf52de5fb16cb01c369f194fa595" category="list-text">El equipo host del proveedor no debe ejecutar proveedores SMI-S de ningún otro proveedor.</block>
 </blocks>

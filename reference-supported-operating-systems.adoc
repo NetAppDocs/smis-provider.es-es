@@ -12,6 +12,8 @@ summary: Antes de instalar SMI-S Provider, debe verificar que el host Windows es
 
 
 [role="lead"]
+Le recomendamos que instale SMI-S Provider en su propia máquina virtual (VM) de Windows dedicada. Esta máquina virtual puede estar en el mismo dominio para permitir una administración segura y conveniente.
+
 Antes de instalar SMI-S Provider, debe verificar que el host Windows esté ejecutando un sistema operativo compatible.
 
 [cols="3*"]
@@ -22,36 +24,23 @@ Antes de instalar SMI-S Provider, debe verificar que el host Windows esté ejecu
  a| 
 Windows
  a| 
-* Microsoft Windows Server 2016
-* Microsoft Windows Server 2019
-* Microsoft Windows Server 2022
 * Microsoft Windows Server 2025
+* Microsoft Windows Server 2022
+* Microsoft Windows Server 2019
+* Microsoft Windows Server 2016
 
  a| 
-Las bibliotecas de tiempo de ejecución de Microsoft Visual C{pp} 2010 se instalan automáticamente durante la instalación del proveedor SMI-S. Para evitar posibles problemas relacionados con las bibliotecas de tiempo de ejecución, debe instalar Microsoft Visual C{pp} 2010 Redistributable Package (x86). desde la siguiente ubicación: http://www.microsoft.com[]
+Las bibliotecas de tiempo de ejecución de Microsoft Visual C{pp} 2010 se instalan automáticamente durante la instalación del proveedor SMI-S. Para evitar posibles problemas relacionados con las bibliotecas de tiempo de ejecución, debe instalar Microsoft Visual C{pp} 2010 Redistributable Package (x86) desde la siguiente ubicación: http://www.microsoft.com[]
 
 |===
 
 
-== Requisito de SCVMM UR 2,1
-
-Se requiere el paquete acumulativo de actualizaciones (UR) 2,1 de System Center Virtual Machine Manager (SCVMM) para gestionar el servidor de archivos de NetApp con el proveedor de NetApp SMI-S 5.2.7 y versiones posteriores.
-
-Sin este UR, SCVMM (versión 2016, 2019, 2022 o 2025) muestra el valor de las `Total Capacity` opciones y `Available Capacity` en cuanto `*0 GB*` a los recursos compartidos de archivos existentes en el servidor de archivos NetApp.
+== Asegúrese de que el equipo host del proveedor cumpla con las especificaciones
 
 Para ejecutar SMI-S Provider, la máquina host del proveedor debe cumplir las siguientes especificaciones:
 
-* La máquina host del proveedor no se puede usar para alojar un nodo de Hyper-V.
-* SCVMM no debe estar ejecutándose en el equipo host del proveedor.
+* El proveedor no se puede instalar directamente en un nodo Hyper-V. En su lugar, puede instalarlo en una máquina virtual Hyper-V.
+* El System Center Virtual Machine Manager (SCVMM) no debe estar ejecutándose en la máquina host del proveedor.
 * El equipo host del proveedor no debe ejecutar otros programas que requieran mucha memoria.
-* El equipo host del proveedor no debe ejecutar proveedores de SMI-S desde ningún otro proveedor.
-
-
-Se admiten los siguientes hipervisores:
-
-* Microsoft Windows Server 2016 Hyper-V.
-* ESX de VMware 5.0
-* ESX de VMware 5.1
-* ESX de VMware 5.5
-* ESX de VMware 6.0
+* El equipo host del proveedor no debe ejecutar proveedores SMI-S de ningún otro proveedor.
 
