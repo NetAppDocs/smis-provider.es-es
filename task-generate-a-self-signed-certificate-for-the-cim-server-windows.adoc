@@ -75,6 +75,7 @@ Puede proporcionar un número diferente de días para los cuales es válido el c
 
 
 
+[[result]]
 == Resultado
 
 El intervalo de fechas del certificado comienza en la fecha actual y se ejecuta durante el número de días especificado.

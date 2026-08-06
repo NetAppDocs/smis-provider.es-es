@@ -56,6 +56,7 @@ Protocolo que se utilizará: HTTPS (predeterminado) o HTTP
 
 
 
+[[storage-system-agent-and-agent-client-protocol]]
 == Protocolo agente-sistema de almacenamiento y agente-cliente
 
 La `smis add` y.. `smis addsecure` los comandos determinan el protocolo que se usa entre el sistema de almacenamiento y el proveedor. La `[-t {*http* | *https*}]` el parámetro determina el protocolo utilizado entre el proveedor y el cliente.

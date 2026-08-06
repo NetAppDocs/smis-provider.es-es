@@ -32,6 +32,7 @@ Utilice el siguiente comando para añadir un sistema de almacenamiento que utili
 
 
 
+[[adding-a-storage-system-that-uses-port-8000-for-http-traffic]]
 == Añadir un sistema de almacenamiento que utilice el puerto 8000 para el tráfico HTTP
 
 `cimcli ci -n root/ontap ONTAP_FilerData hostName=10.60.167.12 port=8000 userName=root password=netapp1! comMechanism=HTTP -u root -p netapp1! -l localhost:5989 -s --timeout 180`
