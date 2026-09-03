@@ -13,4 +13,4 @@ summary: Antes de poder gestionar y supervisar los sistemas de almacenamiento co
 [role="lead"]
 Antes de poder gestionar y supervisar los sistemas de almacenamiento con SMI-S Provider, debe instalar el software SMI-S Provider y validar la configuración preliminar.
 
-image::../media/smi_s_provider_workflow.gif[flujo de trabajo del proveedor de smi]
+image::../media/smi_s_provider_workflow.gif[Un diagrama que muestra la implementación de SMI-S Provider, la validación de la preconfiguración y los flujos de trabajo de las tareas de gestión]

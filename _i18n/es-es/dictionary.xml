@@ -732,7 +732,6 @@
   <block id="37735049e65188a885df4388c67153a4" category="summary">Cuando una aplicación cliente en un host descubre el servidor CIMOM utilizando SLP (codificación CIM-XML a través de HTTP), el cliente solicita a CIMOM objetos compartidos (objetos modelados en el lenguaje CIM). CIMOM carga objetos compartidos y consulta al sistema de almacenamiento utilizando API específicas del dispositivo para la información solicitada.</block>
   <block id="9016abb1e0944872fd232fd72ca5bc80" category="doc">Cómo interactúa el proveedor SMI-S de NetApp con un host</block>
   <block id="14f75c43461428b4df3f6d3980b25d02" category="paragraph">En la siguiente ilustración, se muestra cómo el proveedor de SMI-S de NetApp interactúa con un cliente de gestión WBEM cuando el proveedor de SMI-S recibe una consulta o un comando.</block>
-  <block id="707facb1331bad235d191a85d3686ab2" category="image-alt">interacción entre el agente y el host de smi</block>
   <block id="c3cb8bf1ed7183e77f46d5e7e662b2c1" category="summary">Describe cómo instalar y gestionar SMI-S Provider de NetApp, una interfaz basada en comandos que detecta y gestiona los sistemas de almacenamiento de NetApp.</block>
   <block id="b51493aaf7964eeecd1d7dfd7e847d13" category="doc">Documentación del proveedor SMI-S de NetApp</block>
   <block id="3222e2c38626bc2823512833cc493f15" category="paragraph">Bienvenido a la Biblioteca de información del proveedor SMI-S de NetApp. Aquí encontrará documentación sobre el software SMI-S Provider de NetApp, incluidos cómo instalar y gestionar SMI-S Provider de NetApp, una interfaz basada en comandos que detecta y gestiona los sistemas de almacenamiento de NetApp.</block>
@@ -754,7 +753,6 @@
   <block id="0f98c6be5bd8d1cf4b80b32c02a49dc9" category="paragraph"><block ref="03b78f2617f6efa3934ec29c6b8744d6" prefix="" category="inline-code"></block></block>
   <block id="42c81e79f364b151f80c02c552b5850d" category="summary">Antes de poder gestionar y supervisar los sistemas de almacenamiento con SMI-S Provider, debe instalar el software SMI-S Provider y validar la configuración preliminar.</block>
   <block id="ab3ccb0be518e752d20f706d36d252c9" category="doc">Flujo de trabajo de implementación</block>
-  <block id="04c2ee750a71bee087a7164fa9418c8b" category="image-alt">flujo de trabajo del proveedor de smi</block>
   <block id="27c5899c7f7c11410721efccbf3a8f48" category="summary">Puede utilizar los comandos smis para administrar los sistemas de almacenamiento y para mostrar información sobre el administrador de objetos CIM.</block>
   <block id="337c6d03c71e412eabb31031c965b155" category="paragraph">Puede utilizar el<block ref="e05dab3c02f28008e9d45ec2a755535d" prefix=" " category="inline-code"></block> Comandos para administrar sistemas de almacenamiento y para mostrar información sobre el administrador de objetos CIM.</block>
   <block id="7ed05529165de8dd21dd5335d6583157" category="paragraph">Hay ayuda disponible para<block ref="e05dab3c02f28008e9d45ec2a755535d" prefix=" " category="inline-code"></block> mediante el<block ref="f599cc506e0eddc851eb7ebdb18a6143" prefix=" " category="inline-code"></block> opción.</block>
@@ -917,4 +915,6 @@
   <block id="cc2ad876e77ac64c0d4f8e5e89900549" category="list-text">Debes haber descargado e instalado OpenSSL en tu host Windows.</block>
   <block id="c104915e9f0d8e0313edcca7765f005e" category="list-text">Reinicie el servicio del proveedor SMI-S:</block>
   <block id="fa623328d311ec4315ab82a9a7303cbe" category="list-text"><block ref="fa623328d311ec4315ab82a9a7303cbe" category="inline-link-rx"></block></block>
+  <block id="f08445df01bad5aee6547cb7953d07d6" category="image-alt">Un diagrama que muestra la implementación de SMI-S Provider, la validación de la preconfiguración y los flujos de trabajo de las tareas de gestión</block>
+  <block id="459eb66f775af707f84ca3f4c3f5f129" category="image-alt">Un diagrama que muestra un host enviando consultas al proveedor SMI-S CIMOM, al repositorio, a las DLL del proveedor y al sistema de almacenamiento</block>
 </blocks>
