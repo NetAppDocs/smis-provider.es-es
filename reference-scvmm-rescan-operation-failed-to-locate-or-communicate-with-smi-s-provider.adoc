@@ -10,6 +10,9 @@ summary: Problemas encontrados con el proveedor SMI-S de NetApp.
 :imagesdir: ./media/
 
 
+[role="lead"]
+En contadas ocasiones, System Center Virtual Machine Manager (SCVMM) no puede localizar ni comunicarse con NetApp SMI-S Provider después de una actualización de la infraestructura de seguridad. Resuelve este problema reinstalando el proveedor y ejecutando la operación de nuevo escaneo en SCVMM.
+
 * *Edición*
 +
 En raras ocasiones, SCVMM no puede localizar a SMI-S Provider.

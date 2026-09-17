@@ -10,6 +10,9 @@ summary: Problemas encontrados con el proveedor SMI-S de NetApp.
 :imagesdir: ./media/
 
 
+[role="lead"]
+El tamaño de un recurso compartido SMB 3.0 puede reducirse a 0 en System Center Virtual Machine Manager (SCVMM) cuando la reinicialización de la cuota tarda mucho tiempo en ONTAP debido a una elevada carga de E/S, lo que impide que se aprovisionen nuevas máquinas virtuales. Resuelve este problema ajustando la configuración de la cuota.
+
 * *Edición*
 +
 El tamaño de recurso compartido de SMB 3.0 nuevo o existente puede caer a 0 en System Center Virtual Machine Manager (SCVMM).

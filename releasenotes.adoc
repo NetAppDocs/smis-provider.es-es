@@ -10,4 +10,7 @@ summary: Proporciona información sobre las funciones, las limitaciones y los pr
 :imagesdir: ./media/
 
 
+[role="lead"]
+Las notas de la versión de NetApp SMI-S Provider describen las nuevas funciones, las instrucciones de actualización, los problemas solucionados y las limitaciones conocidas de cada versión. Consulta aquí las notas de la versión actual de NetApp SMI-S Provider 5.2.7.
+
  https://library.netapp.com/ecm/ecm_download_file/ECMLP3344664["Notas de la versión del proveedor SMI-S de NetApp"^]Describa las nuevas funciones, notas de actualización, problemas solucionados, limitaciones conocidas y problemas conocidos.

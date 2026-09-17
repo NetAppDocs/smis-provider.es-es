@@ -10,6 +10,9 @@ summary: Problemas encontrados con el proveedor SMI-S de NetApp.
 :imagesdir: ./media/
 
 
+[role="lead"]
+El espacio total gestionado que muestra NetApp SMI-S Provider para un grupo de almacenamiento (volumen) puede diferir del tamaño que indican otras herramientas de gestión de almacenamiento, como FilerView, ya que SMI-S Provider incluye la reserva de WAFL y de snapshot. Esta discrepancia es un comportamiento esperado y no requiere ninguna medida correctiva.
+
 * *Edición*
 +
 Si utiliza otra herramienta de gestión del almacenamiento, como FilerView, es posible que observe un tamaño diferente indicado para el espacio gestionado total de un pool de almacenamiento (volumen) que el tamaño devuelto por SMI-S Provider.

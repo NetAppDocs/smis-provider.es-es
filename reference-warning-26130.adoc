@@ -10,6 +10,9 @@ summary: Problemas encontrados con el proveedor SMI-S de NetApp.
 :imagesdir: ./media/
 
 
+[role="lead"]
+La advertencia 26130 se produce cuando se asigna capacidad de almacenamiento a un grupo de hosts en el que ninguno de los hosts tiene acceso a la matriz de almacenamiento, lo que impide colocar máquinas virtuales en el sistema de almacenamiento. Concede el acceso necesario a cada host para resolver esta advertencia.
+
 
 
 [[message]]

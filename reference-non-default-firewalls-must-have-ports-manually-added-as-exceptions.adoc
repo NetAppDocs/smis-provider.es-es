@@ -10,6 +10,9 @@ summary: Problemas encontrados con el proveedor SMI-S de NetApp.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Si utilizas un cortafuegos distinto del cortafuegos predeterminado de Windows, NetApp SMI-S Provider podría no poder comunicarse con los clientes ni enviar indicaciones, a menos que añadas los puertos necesarios como excepciones. Añade estos puertos a la configuración de tu cortafuegos para resolver el problema.
+
 * *Edición*
 +
 Si está utilizando un firewall distinto del firewall predeterminado de Windows, puede experimentar los siguientes problemas:
