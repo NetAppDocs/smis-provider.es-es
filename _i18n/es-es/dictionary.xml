@@ -159,9 +159,6 @@
   <block id="9d3252d8eb7b2dda525b61eaa4b4b280" category="paragraph">El número de ONTAP_ConcretePools coincide con el número total de agregados en todos los sistemas de almacenamiento.</block>
   <block id="72191377bb33379ad51587a7a17190c6" category="paragraph"><block ref="0f44b667bbfb5498165b4f0f5ca52339" prefix="" category="inline-code"></block></block>
   <block id="692fc4e2c1fc79807c8600f51a03ed82" category="paragraph">La cantidad de volúmenes coincide con la cantidad total de volúmenes en todos los sistemas de almacenamiento.</block>
-  <block id="ef23db5e5a3a16df609d1db8b2ff882c" category="summary">Puede editar el archivo de configuración slp.conf para administrar el servicio del daemon de protocolo de ubicación de servicio (SLPD).</block>
-  <block id="e1cd17773638b5c6ba6a33ec0efa8bed" category="doc">Especifique las opciones de configuración de SLP</block>
-  <block id="c520045e753333a3e19361a8bcc5accb" category="paragraph">Puede editar el<block ref="cd8fa2e8a9ca8395c90e6d05c6dd4df4" prefix=" " category="inline-code"></block> Archivo de configuración para administrar el servicio del daemon de protocolo de ubicación de servicio (SLPD).</block>
   <block id="80feca2aef5bfe7af61ecef2104515dc" category="summary">Conocer el número máximo de sistemas gestionados por SMI-S Provider de NetApp le ayuda a comprender sus funcionalidades de rendimiento.</block>
   <block id="8df995b0877455c8e157e1650dc377d4" category="doc">Ajuste de tamaño y rendimiento del proveedor SMI-S de NetApp</block>
   <block id="98bc8ee199ee6b2e16fe0a72065bc977" category="paragraph">*Tamaño*</block>
@@ -714,7 +711,6 @@
   <block id="b3973a38d43f2f1fe906a50cc9911f34" category="inline-link">Storage Networking Industry Association (SNIA)</block>
   <block id="6406ef7be2956ab22d718f61a164ac48" category="list-text"><block ref="6406ef7be2956ab22d718f61a164ac48" category="inline-link-rx"></block></block>
   <block id="6409b577d21cd98c3caae687888555d6" category="paragraph">SMI-S Provider reemplaza el uso de varios modelos de objetos gestionados, protocolos y transportes por un único modelo orientado a objetos para todos los componentes de una red de almacenamiento.</block>
-  <block id="4ca8f8dc1b36b9c411697fcb2f505c44" category="summary">Puede configurar cómo SMI-S Provider administra los archivos de seguimiento, como especificar los componentes que se van a rastrear, el destino al que se escriben los mensajes de seguimiento, el nivel de seguimiento y la ubicación del archivo de seguimiento.</block>
   <block id="ff33a03ec388f99378211d1528ffde50" category="doc">Administrar el seguimiento</block>
   <block id="84d19bb0bac8dc1170a89ce09efbcc16" category="summary">Puede especificar los tipos de mensajes que se registran (por ejemplo, sólo desea que se registren mensajes fatales del sistema).</block>
   <block id="d7fe94a97701791841b519021d6eb8b7" category="doc">Niveles de registro</block>
@@ -898,7 +894,6 @@
   <block id="bfdf270b33cb3dc13957bd36fee69058" category="list-text">Para ONTAP, introduzca<block ref="ade191b1004522550d83e818f2d7139d" prefix=" " category="inline-code"></block>.</block>
   <block id="cf0d6d290cc1c4520fbbfc002c946664" category="summary">Proporciona información sobre las funciones, las limitaciones y los problemas conocidos del software SMI-S Provider 5.2.7 de NetApp.</block>
   <block id="24b5861592ee7b4615fa625b97669f21" category="paragraph"><block ref="f88e2f39ae65eb4268159ba7fe6b9dda" category="inline-link-rx"></block>Describa las nuevas funciones, notas de actualización, problemas solucionados, limitaciones conocidas y problemas conocidos.</block>
-  <block id="c77d93c9bafb13a9882093351ecdb498" category="summary">Puede instalar el software SMI-S Provider de NetApp para poder gestionar los sistemas de almacenamiento que ejecutan ONTAP. De forma predeterminada, el software SMI-S Provider de NetApp se instala en el directorio C:\Archivos de programa (x86)\NetApp\smis\pegasus.</block>
   <block id="a29f0f75cbf44d12b1fb98ed37473297" category="paragraph">Puede instalar el software SMI-S Provider de NetApp para poder gestionar los sistemas de almacenamiento que ejecutan ONTAP. Sin embargo, no es posible revertir o degradar a una versión anterior. De forma predeterminada, el software del proveedor SMI-S de NetApp se instala en<block ref="e93eb95a4a6d54999769913bf79a69c9" prefix=" " category="inline-code"></block> el directorio.</block>
   <block id="738fc2618ae3cc77b3d364faaf5e4b42" category="summary">El proveedor SMI-S hace llamadas API de ONTAP a los sistemas de almacenamiento. De manera predeterminada, el tiempo de espera de la llamada API de ONTAP es de 300 segundos. Puede configurar el tiempo de espera en un valor de 60 a 300 segundos.</block>
   <block id="7162b9fa7c706619cc067c40bb9d383b" category="doc">Especifique el valor de tiempo de espera de llamada a la API de ONTAP</block>
@@ -938,4 +933,7 @@
   <block id="6b9a7e33b136d15333a1b5ea897e1536" category="paragraph">El mensaje <block ref="d6bea59fb7c3e2297074e152f32b36f6" prefix=" " category="inline-code"></block> aparece cuando se alcanza el límite máximo de sesiones de usuario por conexión al aprovisionar un gran número de máquinas virtuales en un único recurso compartido de archivos en System Center Virtual Machine Manager (SCVMM). Aumenta este límite para admitir implementaciones de máquinas virtuales más grandes.</block>
   <block id="3d30ad5f2e0a9dd55e0a8cd699fdd7a8" category="paragraph">La advertencia 26130 se produce cuando se asigna capacidad de almacenamiento a un grupo de hosts en el que ninguno de los hosts tiene acceso a la matriz de almacenamiento, lo que impide colocar máquinas virtuales en el sistema de almacenamiento. Concede el acceso necesario a cada host para resolver esta advertencia.</block>
   <block id="415be26ab3c45e9b0e674fcda56c11bb" category="paragraph">Las notas de la versión de NetApp SMI-S Provider describen las nuevas funciones, las instrucciones de actualización, los problemas solucionados y las limitaciones conocidas de cada versión. Consulta aquí las notas de la versión actual de NetApp SMI-S Provider 5.2.7.</block>
+  <block id="ee6721a9bb4d509731f29438bd62f95e" category="summary">SMI-S Provider utiliza perfiles y subperfiles que cumplen con SMI-S v1.7.</block>
+  <block id="cbba47ea1866712504ecb2c8ff66414b" category="summary">NetApp SMI-S Provider consta de tres componentes que te permiten gestionar y supervisar sistemas de almacenamiento, CIMOM, objetos del proveedor y un repositorio.</block>
+  <block id="44ba926fa432704769627324f65ba8a6" category="summary">Instala el software NetApp SMI-S Provider para gestionar los sistemas de almacenamiento que funcionan con ONTAP.</block>
 </blocks>
